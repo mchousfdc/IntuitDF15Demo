@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'GothamHTFLight';
+    src: url('../fonts/GothamHTF/GothamHTF-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue/HelveticaNeue.ttf') format('truetype');
+}
+
+html {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #55565a;
+    font-family: 'HelveticaNeue';
+    background-color: #d3d3d3;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+}
