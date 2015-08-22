@@ -1,0 +1,36 @@
+{
+    "name": "intuit",
+    "description": "Intuit web app",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/salesforce-demos/intuit-demo"
+    },
+    "version": "0.0.1",
+    "devDependencies": {
+        "webpack": "1.10.1",
+        "grunt-cli": "~0.1.13",
+        "react-tools": "~0.13.1",
+        "react": "~0.13.1",
+        "react-hot-loader": "~1.2.4",
+        "webpack-dev-server": "1.10.1",
+        "grunt-webpack": "~1.0.8",
+        "matchdep": "~0.3.0",
+        "grunt": "~0.4.5",
+        "jsx-loader": "~0.13.1",
+        "react-mini-router": "~1.1.2",
+        "css-loader": "~0.10.1",
+        "file-loader": "~0.8.1",
+        "url-loader": "~0.5.5",
+        "style-loader": "~0.10.1",
+        "grunt-contrib-copy": "~0.8.0",
+        "string": "~3.1.1",
+        "lodash": "~3.8.0",
+        "reflux": "^0.2.7",
+        "jquery": "^2.1.4",
+        "moment": "^2.10.6",
+        "react-menu-nav": "git+ssh://git@github.com/salesforce-demos/rs-react-menu-nav.git"
+    },
+    "dependencies": {
+        "jquery": "^2.1.4"
+    }
+}
