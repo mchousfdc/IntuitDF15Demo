@@ -7,7 +7,7 @@ module.exports = React.createClass({
         return (
             <div>
                 <p>This is a sales-forms component</p>
-            <div/>
+            </div>
         );
     }
 });

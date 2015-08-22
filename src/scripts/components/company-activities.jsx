@@ -7,7 +7,7 @@ module.exports = React.createClass({
         return (
             <div>
                 <p>This is a company-activities component</p>
-            <div/>
+            </div>
         );
     }
 });

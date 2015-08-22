@@ -6,8 +6,8 @@ module.exports = React.createClass({
     render: function() {
         return (
             <div>
-                <p>This isa an action-button component</p>
-            <div/>
+                <p>This is an action-button component</p>
+            </div>
         );
     }
 });

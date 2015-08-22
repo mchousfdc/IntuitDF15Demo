@@ -48,7 +48,14 @@ module.exports = React.createClass({
         );
     },
     renderHeader: function () {
-        return <Header path={ this.state.path } />;
+        var backMap = {
+                'invoice-detail': '/invoices',
+                'send-invoice': '/invoice-detail/',
+                'sales-forms': '/settings',
+                'default-message': '/sales-forms'
+            };
+        return <Header path={ this.state.path } 
+                    backMap={ backMap }/>;
     },
     renderBottomMenu: function () {
         return <BottomMenu />;

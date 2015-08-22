@@ -6,7 +6,7 @@ module.exports = React.createClass({
         return (
             <div>
                 <p>This is a settings component</p>
-            <div/>
+            </div>
         );
     }
 });
