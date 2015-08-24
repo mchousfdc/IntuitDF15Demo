@@ -1,0 +1,54 @@
+.invoices {
+    background-color: #d3d3d3;
+}
+
+.invoices .summary {
+    color: #4510dc;
+    font-size: 14px;
+}
+
+.invoices .invoice-list {
+    font-size: 12px;
+    color: #a8a8a8;
+}
+
+.invoices .invoice-list .invoice {
+    padding: 5%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.invoices .summary .balance,
+.invoices .summary .text {
+    margin: 2% 5%;
+    width: 40%;
+    display: inline-block;
+}
+
+.invoices .invoice .row {
+    margin-bottom: 2%;
+}
+
+.invoices .invoice .main-information {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+}
+
+.invoices .invoice .main-information span,
+.invoices .invoice .date-information span {
+    width: 50%;
+    display: inline-block;
+}
+
+.invoices .invoice .amount,
+.invoices .invoice .date,
+.invoices .invoice .invoice-id,
+.invoices .summary .text {
+    text-align: right;
+}
+
+.invoices .invoice .invoice-id {
+    width: 100%;
+    display: inline-block;
+}

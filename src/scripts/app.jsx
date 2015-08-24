@@ -80,7 +80,8 @@ module.exports = React.createClass({
                     activities={ this.state.activities } />
     },
     invoices: function () {
-        return <Invoices key={ this.state.path } />
+        return <Invoices key={ this.state.path } 
+                    invoices={ this.state.invoiceList } />
     },
     invoiceDetail: function ( invoiceId ) {
         return <InvoiceDetail key={ this.state.path } />
