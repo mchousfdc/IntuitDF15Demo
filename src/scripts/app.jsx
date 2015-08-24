@@ -4,6 +4,7 @@ var React = require('react/addons'),
     ReactCSSTransitionGroup = React.addons.CSSTransitionGroup,
     Lodash = require('lodash'),
     CompanyActivitiesStore = require('stores/companyActivities.store.js'),
+    EmailTemplatesStore = require('stores/emailTemplates.store.js'),
     Header = require('header.jsx'),
     CompanyActivities = require('./components/company-activities.jsx' ),
     Invoices = require('./components/invoices.jsx' ),
@@ -23,6 +24,10 @@ module.exports = React.createClass({
         RouterMixin,
         Reflux.connect(
             CompanyActivitiesStore
+        ),
+        Reflux.connect(
+            EmailTemplatesStore,
+            'templates templateType'
         )
     ],
     routes: {
@@ -89,7 +94,11 @@ module.exports = React.createClass({
                     invoiceId={ invoiceId } />
     },
     sendInvoice: function (invoiceId) {
-        return <SendInvoice key={ this.state.path }  />
+        return <SendInvoice key={ this.state.path }                    
+                    invoiceId={ invoiceId }
+                    template={ 
+                        Lodash.where(templates, {type: 'Invoice'})
+                    } />
     },
     settings: function () {
         return <Settings key={ this.state.path } />

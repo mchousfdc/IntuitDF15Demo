@@ -1,0 +1,133 @@
+.send-invoice div, .send-invoice span, 
+.send-invoice h1, .send-invoice h2, .send-invoice h3, .send-invoice p,
+.send-invoice img {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+     font-weight: normal;
+     font-style: normal;
+     font-size: 100%;
+     vertical-align: baseline;
+     line-height: 1.3;
+}
+
+.send-invoice .fa {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.send-invoice {
+    background-color: #F3F5F8;
+}
+
+.send-invoice .text-left {
+    text-align: left;
+}
+
+.send-invoice .text-right {
+    text-align: right;
+}
+
+.send-invoice .fl {
+    float: left;
+}
+
+.send-invoice .fr {
+    float: right;
+}
+
+.send-invoice .clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+/*Customize */
+.send-invoice .row {
+    width: 100%;
+    margin: 10px 2px 5px 2px;
+}
+
+.send-invoice .row input {
+    border: none;
+    height: 50px;
+    width: 68%;
+    font-size: 5vw;
+}
+
+.send-invoice .subject-text {
+    text-overflow: ellipsis;
+}
+
+.send-invoice .to-placeholder {
+    border: 1px solid #fff;
+    height: 50px;
+    width: 15%;
+    background: #fff;
+}
+
+.send-invoice .to-placeholder p {
+    color: #B0B0B0;
+    margin: 10px 5px 5px 5px;
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+.send-invoice .subject-placeholder {
+    border: 1px solid #fff;
+    height: 50px;
+    width: 30%;
+    background: #fff;
+}
+
+.send-invoice .subject-placeholder p {
+    color: #B0B0B0;
+    margin: 10px 5px 5px 5px;
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+.send-invoice .to-icon {
+    border: 1px solid #fff;
+    height: 50px;
+    width: 15%;
+    background: #fff;
+}
+
+.send-invoice .content-icon {
+    margin: 10px 5px;
+}
+
+.send-invoice .to-icon i {
+    color: #fff;
+    background: #3965CE; 
+    padding: 10px;
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+.send-invoice .to-icon .border-contact {
+    background: #398ACE;
+    padding: 10px 0px;
+    margin-right: 1px;
+    border-radius: 100% 0 0 100%;
+}
+
+.send-invoice .row .send-text {
+    border: 1px solid #fff;
+    width: 96%;
+    height: 400px;
+    margin: 0 2px;
+    font-size: 5vw;
+    background-color: #ffffff;
+}
+
+.send-invoice .row .send-text li:first-child {
+    margin-bottom: 5vw;
+}
