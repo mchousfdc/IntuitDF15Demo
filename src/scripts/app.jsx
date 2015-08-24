@@ -84,7 +84,9 @@ module.exports = React.createClass({
                     invoices={ this.state.invoiceList } />
     },
     invoiceDetail: function ( invoiceId ) {
-        return <InvoiceDetail key={ this.state.path } />
+        return <InvoiceDetail key={ this.state.path }
+                    invoices={ this.state.invoiceList } 
+                    invoiceId={ invoiceId } />
     },
     sendInvoice: function (invoiceId) {
         return <SendInvoice key={ this.state.path }  />
