@@ -1,0 +1,71 @@
+.company-activites {
+   background-color: #d3d3d3;
+}
+
+.company-activites .activity {
+    padding: 5%;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-bottom: 3%;
+}
+
+.company-activites .activity .title,
+.company-activites .activity .amount,
+.company-activites .activity .comment {
+    width: 50%;
+    display: inline-block;
+}
+
+.company-activites .activity .title,
+.company-activites .activity .amount  {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.company-activites .activity .amount  {
+    text-align: right;
+}
+
+.company-activites .activity .partially-paid,
+.company-activites .activity .sub-title {
+    display: inline-block;
+    margin-top: 2%;
+}
+
+.company-activites .activity .sub-title {
+    font-size: 16px;
+}
+
+.company-activites .activity .partially-paid {
+    visibility: hidden;
+    background-color: green;
+    padding: 1%;
+    width: 40%;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.company-activites .activity .partially-paid .icon {
+    background: url('../images/InfoIcon@2x.png') no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 2%;
+}
+
+.company-activites .activity .partially-paid .text {
+    position: relative;
+    top: -5px;
+}
+
+.company-activites .activity .partially-paid.active {
+    visibility: visible;
+}
+
+.company-activites .activity .comment {
+    font-size: 14px;
+    text-align: right;
+    color: #a8a8a8;
+    width: 58%;
+}

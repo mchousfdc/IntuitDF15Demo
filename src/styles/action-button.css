@@ -1,1 +1,10 @@
-
+.action-button {
+    width: 14vw;
+    margin: 0 auto;
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 1%;
+    opacity: 1;
+}

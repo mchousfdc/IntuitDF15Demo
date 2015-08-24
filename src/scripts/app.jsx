@@ -3,6 +3,7 @@ var React = require('react/addons'),
     RouterMixin = require('react-mini-router').RouterMixin,
     ReactCSSTransitionGroup = React.addons.CSSTransitionGroup,
     Lodash = require('lodash'),
+    CompanyActivitiesStore = require('stores/companyActivities.store.js'),
     Header = require('header.jsx'),
     CompanyActivities = require('./components/company-activities.jsx' ),
     Invoices = require('./components/invoices.jsx' ),
@@ -19,7 +20,10 @@ require('screen-transitions.css');
 
 module.exports = React.createClass({
     mixins: [
-        RouterMixin
+        RouterMixin,
+        Reflux.connect(
+            CompanyActivitiesStore
+        )
     ],
     routes: {
         '/': 'companyActivities',
@@ -61,7 +65,8 @@ module.exports = React.createClass({
         return <BottomMenu />;
     },
     companyActivities: function () {
-        return <CompanyActivities key={ this.state.path } />
+        return <CompanyActivities key={ this.state.path }
+                    activities={ this.state.activities } />
     },
     invoices: function () {
         return <Invoices key={ this.state.path } />
