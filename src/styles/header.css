@@ -1,0 +1,111 @@
+.header {
+    width: 100%;
+    position: fixed;
+    font-size: 5vw;
+    font-weight: bold;
+    z-index: 3;
+    min-height: 7vh;
+    height: 8vh;
+    background-color: #d3d3d3;
+    padding-top: 3.5vh;
+    transition: transform 0.5s ease-in;
+    -webkit-transition: transform 0.5s ease-in;
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
+}
+
+.header span {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+}
+
+.header .title {
+    width: 100vw;
+    position: absolute;
+    top: 35%;
+    margin: 3% auto;
+    text-align: center;
+    color: #000000;
+    font-family: 'HelveticaNeue', sans;
+    z-index: 2;
+    display: inline-block;
+    font-size: 6vw;   
+}
+
+.header .title .trademark {
+    font-size: 3vw;
+    position: relative;
+    top: -1.57vw;
+    left: 0.65vw;
+}
+
+.header .left-icon {
+    float: left;
+    margin: -2.5% 0 0 4%;
+    color: #4510dc;
+    width: 30vw;
+    z-index: 3;
+}
+
+.header .left-icon:before {
+    font-size: 8vw;
+    position: relative;
+    top: 7px;
+}
+
+.header .right-icon {
+    display: inline-block;    
+    float: right;    
+    color: #4510dc;
+    margin: -2.5% 3%;
+    z-index: 3;
+}
+
+.header .right-icon.icon {
+    height: 10vw;
+    width: 10vw;
+    font-size: 7vw;
+    margin: -4% 1%;
+}
+
+.header .left-icon.ss-navigateleft {
+    margin: -6.5% 0 0 1%;
+}
+
+.header .left-icon.menu-icon {
+    background: url('../images/menu-icon.png') no-repeat;
+    background-size: contain;
+    width: 10vw;
+    height: 5vw;
+    z-index: 3;
+}
+
+.header .left-icon.back-button {
+    color: #31a6de;
+    font-family: 'HelveticaNeue', sans;
+}
+
+.header.menu-open {
+    transform: translateX(75%);
+    -webkit-transform: translateX(75%);
+}
+
+.header .locationTitle {
+    color: white;
+    font-size: 3.8vw;
+    width: 58vw;
+    margin-top: -2vh;
+    margin-right: 11vw;
+    display: none;
+    text-align: center;
+    line-height: 5vw;
+}
+
+.header .locationTitle.show {
+    display: inline-block;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

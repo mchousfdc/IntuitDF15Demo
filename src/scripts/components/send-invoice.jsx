@@ -7,7 +7,7 @@ module.exports = React.createClass({
         return (
             <div>
                 <p>This is a send-invoice component</p>
-            <div/>
+            </div>
         );
     }
 });

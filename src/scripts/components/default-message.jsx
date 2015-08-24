@@ -7,7 +7,7 @@ module.exports = React.createClass({
         return (
             <div>
                 <p>This is a default-message component</p>
-            <div/>
+            </div>
         );
     }
 });

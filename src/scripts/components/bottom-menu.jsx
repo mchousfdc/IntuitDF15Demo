@@ -7,7 +7,7 @@ module.exports = React.createClass({
         return (
             <div>
                 <p>This is a bottom-menu component</p>
-            <div/>
+            </div>
         );
     }
 });
