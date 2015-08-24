@@ -1,0 +1,117 @@
+.bottom-menu .menu {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    font-family: 'HelveticaNeue';
+    margin: 0 3vw 3vw;
+    display: none;
+    -webkit-transform: translateY(100%);
+    -webkit-transition: -webkit-transform 0.4s ease;
+}
+
+.bottom-menu .menu.show {
+    -webkit-transform: translateY(-20%);
+}
+
+.bottom-menu .action-menu {
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 4;
+    background: #F8F8F8;
+    border-top: 5px solid #E7E7E7;
+}
+
+.bottom-menu .action-menu ul {
+    z-index: 3;
+}
+
+.bottom-menu .action-menu ul li {
+    color: #6483CC;
+    padding: 3% 6%;
+    font-size: 8vw;
+    display: -webkit-inline-box;
+}
+/*
+.bottom-menu .editor {
+    background: #F8F8F8;
+    border-top: 5px solid #E7E7E7;
+}
+
+.bottom-menu .editor ul {
+    z-index: 3;
+}
+
+.bottom-menu .editor ul li {
+    color: #6483CC;
+    padding: 3% 6%;
+    font-size: 8vw;
+    display: -webkit-inline-box;
+}
+*/
+/*
+.bottom-menu .action-menu:active {
+    opacity: 0.9;
+}*/
+
+.bottom-menu .overlay {
+    width: 100vw;
+    height: 111vh;
+    position: absolute;
+    top: -20vw;
+    z-index: 3;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bottom-menu .menu li.action-menu-item {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d3d3d3;
+    height: 8vh;
+    width: 94vw;
+    position: relative;
+    color: blue;
+}
+
+.bottom-menu .menu li.action-menu-item:first-child  {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.bottom-menu .menu li.action-menu-item:nth-last-child(2)  {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.bottom-menu .menu li.action-menu-item:last-child {
+    margin-top: 2vw;
+    border-radius: 5px;
+}
+
+.bottom-menu .menu li.action-menu-item .icon {
+    width: 4vw;
+    position: absolute;
+    top: 3vh;
+    left: 5vh;
+}
+
+.bottom-menu .menu li.action-menu-item .label {
+    text-align: center;
+    font-size: 4vw;
+    letter-spacing: 0.5vw;
+    width: 100%;
+    position: absolute;
+    top: 3vh;
+}
+
+.bottom-menu .menu li.action-menu-item:active {
+    opacity: 0.9;
+    color: red;
+    font-weight: bold;
+}
+
+.bottom-menu .menu li.action-menu-item .label.cancel {
+    color: blue;
+    font-weight: bold;
+}

@@ -62,7 +62,18 @@ module.exports = React.createClass({
                     backMap={ backMap }/>;
     },
     renderBottomMenu: function () {
-        return <BottomMenu />;
+        var routesWithBottomMenu = [
+                'invoice-detail',
+                'send-invoice'
+            ],
+            path = this.state.path.split('/')
+            currentPath = path[1],
+            invoiceId = path[2];
+
+        return <BottomMenu
+                    invoiceId={ invoiceId }
+                    display={ Lodash.includes(
+                        routesWithBottomMenu, currentPath ) } />;
     },
     companyActivities: function () {
         return <CompanyActivities key={ this.state.path }
