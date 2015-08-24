@@ -43,7 +43,7 @@ module.exports = React.createClass({
                     </div>   
                 </li>
             );
-        }.bind(this))
+        }.bind(this));
 
         return (
             <div className="company-activites content">
