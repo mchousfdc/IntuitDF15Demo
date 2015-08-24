@@ -50,7 +50,7 @@ module.exports = React.createClass({
     },
     getHeaderSectionsFromPath: function () {
         var page = this.props.path.split('/')[1],
-            pageTexts = HeaderTexts[page]
+            pageTexts = HeaderTexts[page],
             headerSectionsMap = {
                 rightSection: <span className="right-icon icon ss-gizmo ss-search" >
                 </span>,
