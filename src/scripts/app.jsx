@@ -109,8 +109,12 @@ module.exports = React.createClass({
     salesForms: function () {
         return <SalesForms key={ this.state.path } />
     },
-    defaultMessage: function () {        
-        return <DefaultMessage key={ this.state.path } />
+    defaultMessage: function () {
+        var template = Lodash.where(
+                templates, { type: templateType }
+            )
+        return <DefaultMessage key={ this.state.path } 
+                    currentTemplate={ template } />
     },
     // DO NOT REMOVE new route callback
     notFound: function (path) {
