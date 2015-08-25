@@ -63,9 +63,6 @@ li {
     -webkit-transition-property: height;
     transition-delay: 0.5s;
     -webkit-transition-delay: 0.5s;
-/*    -webkit-box-shadow: inset -5px 0px 13px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset -5px 0px 13px 0px rgba(0,0,0,0.75);
-    box-shadow: inset -5px 0px 13px 0px rgba(0,0,0,0.75);*/
 }
 
 .react-menu-nav.menu-open {

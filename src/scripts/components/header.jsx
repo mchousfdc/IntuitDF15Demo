@@ -111,18 +111,30 @@ module.exports = React.createClass({
                                 <li onClick={ 
                                     this.goTo.bind(null,'/')                                   
                                 }>
-                                    Expenses <span className="plus"><span className="more">+</span></span>
+                                    Expenses 
+                                    <span className="plus">
+                                        <span className="more">+</span>
+                                    </span>
                                 </li>
                                 <li>
-                                    Estimates <span className="plus"><span className="more">+</span></span>
+                                    Estimates 
+                                    <span className="plus">
+                                        <span className="more">+</span>
+                                    </span>
                                 </li>
                                 <li onClick={ 
                                      this.goTo.bind(null,'/invoices')                                  
                                 }>
-                                    Invoices <span className="plus"><span className="more">+</span></span>
+                                    Invoices 
+                                    <span className="plus">
+                                        <span className="more">+</span>
+                                    </span>
                                 </li>
                                 <li>
-                                    Sales Receipts <span className="plus"><span className="more">+</span></span>
+                                    Sales Receipts 
+                                    <span className="plus">
+                                        <span className="more">+</span>
+                                    </span>
                                 </li>
                                 <li>
                                     Payments <span className="plus"><span className="more">+</span></span>
