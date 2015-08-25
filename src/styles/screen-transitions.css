@@ -1,0 +1,81 @@
+/* Enter/leave from right to left */
+.slideleft-enter {
+    position: absolute!important;
+    display: inline-block;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: -webkit-tranform .5s ease-in;
+    transition: transform .5s ease-in;
+    clear: none;
+}
+
+.slideleft-enter.slideleft-enter-active,
+.slideleft-leave {
+    display: inline-block;
+    position: absolute!important;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: -webkit-transform .5s ease-in;
+    transition: transform .5s ease-in;
+}
+
+.slideleft-leave.slideleft-leave-active {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.slideleft-leave, .slideright-leave {
+    z-index: -1!important;
+    -webkit-transition-delay: 0.1s!important;
+    transition-delay: 0.1s!important;
+}
+
+/* Enter/leave from left to right */
+.slideright-enter {
+    position: absolute!important;
+    display: inline-block;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: -webkit-transform .5s ease-in;
+    transition: transform .5s ease-in;
+    clear: none;
+}
+
+.slideright-enter.slideright-enter-active,
+.slideright-leave {
+    display: inline-block;
+    position: absolute!important;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: -webkit-transform .5s ease-in;
+    transition: transform .5s ease-in;
+}
+
+.slideright-leave.slideright-leave-active {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+/* Fade in/out */
+.fade-enter {
+    opacity: 0.01;
+    -webkit-transition: opacity .5s ease-in;
+    transition: opacity .5s ease-in;
+    position: absolute;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+}
+
+.fade-leave {
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-in;
+    transition: opacity .5s ease-in;
+    position: absolute;
+}
+
+.fade-leave.fade-leave-active {
+    opacity: 0.01;
+}
+
