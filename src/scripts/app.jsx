@@ -40,6 +40,9 @@ module.exports = React.createClass({
         '/default-message': 'defaultMessage',
         // DO NOT REMOVE new route route
     },
+    componentDidUpdate: function () {
+        window.goingBack = false;
+    },
     render: function () {
         var transitionName = 'fade';
 

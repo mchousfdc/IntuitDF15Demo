@@ -1,0 +1,97 @@
+.sales-forms div, .sales-forms span, 
+.sales-forms h1, .sales-forms h2, .sales-forms h3, .sales-forms p,
+.sales-forms img {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+     font-weight: normal;
+     font-style: normal;
+     font-size: 100%;
+     vertical-align: baseline;
+     line-height: 1.3;
+}
+
+.sales-forms .fa {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sales-forms {
+    background-color: #F3F5F8;
+}
+
+.sales-forms .text-left {
+    text-align: left;
+}
+
+.sales-forms .text-right {
+    text-align: right;
+}
+
+.sales-forms .fl {
+    float: left;
+}
+
+.sales-forms .fr {
+    float: right;
+}
+
+.sales-forms .clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+/*Customize */
+.sales-forms .row {
+    width: 100%;
+    padding: 5px 5px 0px 10px;
+    font-size: 5vw;
+    min-height: 40px;
+    border-bottom: 2px solid #eee;
+}
+
+.sales-forms .row:active {
+    background: #F7F7F7;
+}
+
+.sales-forms .blank {
+    background-color: #fff;
+}
+
+.sales-forms .row .options {
+    margin: 5px 0 0 0;
+}
+
+.sales-forms .options .title {
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #C4C4C4;
+    font-size: 4vw;
+}
+
+.sales-forms .options .title p:first-child{
+    font-weight: bold;
+    color: #000;
+    font-size: 5vw;
+}
+
+.sales-forms .options .option {
+    margin-right: 25px;
+    color: #9C9595;
+    margin-bottom: 5px;
+}
+
+.sales-forms .options.link {
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7591AE;
+    margin-top: 10px;
+}
