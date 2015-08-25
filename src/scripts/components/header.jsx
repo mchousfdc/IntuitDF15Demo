@@ -17,6 +17,7 @@ module.exports = React.createClass({
     toggleMenu: function () {
         this.setState({ displayMenuNav: !this.state.displayMenuNav });
         $('.view-container, .react-menu-nav, .header').toggleClass('menu-open');
+        $('.content').toggleClass('not-active');
     },
     resetFlow: function () {
         navigate('/');
@@ -110,21 +111,21 @@ module.exports = React.createClass({
                                 <li onClick={ 
                                     this.goTo.bind(null,'/')                                   
                                 }>
-                                    Expenses <span className="plus">+</span>
+                                    Expenses <span className="plus"><span className="more">+</span></span>
                                 </li>
                                 <li>
-                                    Estimates <span className="plus">+</span>
+                                    Estimates <span className="plus"><span className="more">+</span></span>
                                 </li>
                                 <li onClick={ 
                                      this.goTo.bind(null,'/invoices')                                  
                                 }>
-                                    Invoices <span className="plus">+</span>
+                                    Invoices <span className="plus"><span className="more">+</span></span>
                                 </li>
                                 <li>
-                                    Sales Receipts <span className="plus">+</span>
+                                    Sales Receipts <span className="plus"><span className="more">+</span></span>
                                 </li>
                                 <li>
-                                    Payments <span className="plus">+</span>
+                                    Payments <span className="plus"><span className="more">+</span></span>
                                 </li>
                             </ul>
                         </div>
