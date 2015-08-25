@@ -53,7 +53,7 @@ li {
 .react-menu-nav {
     width: 75%;
     position: absolute;
-    background-color: #1c5375;
+    background-color: #193048;
     color: #fff;
     overflow-y: hidden; /*scroll;*/
     -webkit-overflow-scrolling: touch;
@@ -63,12 +63,10 @@ li {
     -webkit-transition-property: height;
     transition-delay: 0.5s;
     -webkit-transition-delay: 0.5s;
-    -webkit-box-shadow: inset -5px 0px 13px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset -5px 0px 13px 0px rgba(0,0,0,0.75);
-    box-shadow: inset -5px 0px 13px 0px rgba(0,0,0,0.75);
 }
 
 .react-menu-nav.menu-open {
+    width: 70.16%;
     height: 100vh;
     z-index: 3;
     transition-property: z-index;
@@ -79,10 +77,10 @@ li {
 
 .react-menu-nav .title {
     display: inline-block;
-    background-color: gray;
-    width: 91%;
-    padding: 3%;
-    color: #d3d3d3;
+    background-color: #2D4257;
+    width: 93%;
+    padding: 4.3% 0 3% 7.10%;
+    color: #C4DBF0;
 }
 
 .react-menu-nav ul {
@@ -92,21 +90,36 @@ li {
 
 .react-menu-nav ul li {
     list-style: none;
-    padding: 7% 0 7% 5%;
+    padding: 4.3% 0 5.7% 7.10%;
     width: 92%;
+    font-size: 4.55vw;
 }
 
 .react-menu-nav ul li:active {
-    background-color: turquoise;
+    background-color: #0098CD;
 }
 
 .react-menu-nav ul li .plus {
     display: inline-block;
-    border: 2px solid;
+    border: 2px solid #C4DBF0;
     border-radius: 50%;
-    width: 18px;
+    width: 5.9vw;
+    height: 5.9vw;
     text-align: center;
     float: right;
     margin-right: 10px;
     font-family: 'GothamHTFLight';
+    margin-top: -2px;
+}
+
+.react-menu-nav ul li .plus .more{
+    font-size: 6vw;
+    font-weight: bold;
+    line-height: 6.4vw;
+    color: #C4DBF0;
+}
+
+.content.not-active {
+   pointer-events: none;
+   cursor: default;
 }
