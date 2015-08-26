@@ -28,7 +28,7 @@
         "reflux": "^0.2.7",
         "jquery": "^2.1.4",
         "moment": "^2.10.6",
-        "react-menu-nav": "git+ssh://git@github.com/salesforce-demos/rs-react-menu-nav.git"
+        "react-menu-nav": "git+ssh://git@github.com/mchousfdc/rs-react-menu-nav.git"
     },
     "dependencies": {
         "jquery": "^2.1.4"
