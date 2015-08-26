@@ -1,21 +1,26 @@
 .invoices {
-    background-color: #d3d3d3;
+    background-color: #f3f5f8;
 }
 
 .invoices .summary {
-    color: #4510dc;
+    color: #6988A7;
     font-size: 14px;
 }
 
 .invoices .invoice-list {
     font-size: 12px;
-    color: #a8a8a8;
+    color: #a8a8a8; 
 }
 
 .invoices .invoice-list .invoice {
-    padding: 5%;
+    padding-top: 3.74%;
+    padding-left: 4%;
+    padding-right: 4.29%;
+    padding-bottom: 3.87%;
     margin: 0 auto;
     background-color: #fff;
+    margin-bottom: 1.5%;
+    height: 16.8vw;
 }
 
 .invoices .summary .balance,
@@ -31,14 +36,20 @@
 
 .invoices .invoice .main-information {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 4.55vw;
     color: #000;
 }
 
-.invoices .invoice .main-information span,
+.invoices .invoice .main-information span {
+    width: 50%;
+    display: inline-block;
+    font-size: 4.55vw;
+}
+
 .invoices .invoice .date-information span {
     width: 50%;
     display: inline-block;
+    font-size: 3.75vw;
 }
 
 .invoices .invoice .amount,
