@@ -52,8 +52,16 @@ module.exports = React.createClass({
     },
     startSOS: function () {
         this.closeMenu();
-        window.location.href = "sos://start";
-        console.log('sos was started');
+
+        if ( window.webkit ) {
+            window.webkit.messageHandlers.nativeHandler.postMessage(
+                "start"
+            );
+            console.log('sos was started');
+        } else {
+            console.log('window.webkit.messageHandlers is not defined ' +
+                'in your environment')
+        }        
     },
     goToNextScreen: function () {
         this.closeMenu();
