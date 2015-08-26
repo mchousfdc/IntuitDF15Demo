@@ -1,12 +1,16 @@
 .company-activites {
-   background-color: #d3d3d3;
+   background-color: #f3f5f8;
 }
 
 .company-activites .activity {
-    padding: 5%;
+    padding-top: 3.74%;
+    padding-left: 4%; 
+    padding-right: 4.29%;
+    padding-bottom: 3.87%;
     margin: 0 auto;
     background-color: #fff;
     margin-bottom: 3%;
+    height: 16.8vw;
 }
 
 .company-activites .activity .title,
@@ -19,7 +23,7 @@
 .company-activites .activity .title,
 .company-activites .activity .amount  {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 4.55vw;
 }
 
 .company-activites .activity .amount  {
@@ -33,16 +37,18 @@
 }
 
 .company-activites .activity .sub-title {
-    font-size: 16px;
+    font-size: 3.75vw;
 }
 
 .company-activites .activity .partially-paid {
     visibility: hidden;
-    background-color: green;
+    background-color: #56B349;
     padding: 1%;
     width: 40%;
     border-radius: 5px;
     color: #fff;
+    height: 23px;
+    margin-top: 0px;
 }
 
 .company-activites .activity .partially-paid .icon {
@@ -57,15 +63,22 @@
 .company-activites .activity .partially-paid .text {
     position: relative;
     top: -5px;
+    font-size: 4.55vw;
+    padding-top: 1%;
 }
 
 .company-activites .activity .partially-paid.active {
     visibility: visible;
+    margin-top: 7px;
 }
 
 .company-activites .activity .comment {
-    font-size: 14px;
+    font-size: 3.2vw;
     text-align: right;
-    color: #a8a8a8;
+    color: #979797;
     width: 58%;
+}
+
+.company-activites .height-content {
+    height: 20vw;
 }
