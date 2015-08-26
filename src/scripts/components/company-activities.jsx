@@ -14,11 +14,14 @@ module.exports = React.createClass({
             var partiallyPaidClassName = activity.payments ? 
                     "partially-paid active" :
                     "partially-paid",
+                partiallyPaidHeightClassName= activity.payments ?
+                    "activity height-content" :
+                    "activity", 
                 title = activity.title + (activity.id ? ' #' + activity.id : ''),
                 subTitle = [activity.prefix, activity.store].join(' ');
 
             return (
-                <li key={i} className="activity"
+                <li key={i} className={ partiallyPaidHeightClassName }
                     onClick={
                         activity.id ? 
                             function () { navigate('/invoice-detail/' + activity.id) }:

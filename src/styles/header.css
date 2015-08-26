@@ -6,12 +6,12 @@
     z-index: 3;
     min-height: 7vh;
     height: 8vh;
-    background-color: #d3d3d3;
+    background-color: #f7f7f8;
     padding-top: 3.5vh;
     transition: transform 0.5s ease-in;
     -webkit-transition: transform 0.5s ease-in;
-    -webkit-box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
-    box-shadow: 2px 2px 2px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 1px 1px 1px 0px #b2b2b2;
+    box-shadow: 1px 1px 1px 0px #b2b2b2;
 }
 
 .header span {
@@ -57,7 +57,7 @@
 .header .right-icon {
     display: inline-block;    
     float: right;    
-    color: #4510dc;
+    color: #3965ce;
     margin: -2.5% 3%;
     z-index: 3;
 }
