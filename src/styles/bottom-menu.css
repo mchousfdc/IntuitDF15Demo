@@ -28,32 +28,11 @@
 }
 
 .bottom-menu .action-menu ul li {
-    color: #6483CC;
+    color: #3965ce;
     padding: 3% 6%;
     font-size: 8vw;
     display: -webkit-inline-box;
 }
-/*
-.bottom-menu .editor {
-    background: #F8F8F8;
-    border-top: 5px solid #E7E7E7;
-}
-
-.bottom-menu .editor ul {
-    z-index: 3;
-}
-
-.bottom-menu .editor ul li {
-    color: #6483CC;
-    padding: 3% 6%;
-    font-size: 8vw;
-    display: -webkit-inline-box;
-}
-*/
-/*
-.bottom-menu .action-menu:active {
-    opacity: 0.9;
-}*/
 
 .bottom-menu .overlay {
     width: 100vw;
@@ -71,7 +50,7 @@
     height: 8vh;
     width: 94vw;
     position: relative;
-    color: blue;
+    color: #3965ce;
 }
 
 .bottom-menu .menu li.action-menu-item:first-child  {
@@ -82,6 +61,7 @@
 .bottom-menu .menu li.action-menu-item:nth-last-child(2)  {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    color: #fb635b;
 }
 
 .bottom-menu .menu li.action-menu-item:last-child {
@@ -98,7 +78,7 @@
 
 .bottom-menu .menu li.action-menu-item .label {
     text-align: center;
-    font-size: 4vw;
+    font-size: 5.5vw;
     letter-spacing: 0.5vw;
     width: 100%;
     position: absolute;
@@ -112,6 +92,6 @@
 }
 
 .bottom-menu .menu li.action-menu-item .label.cancel {
-    color: blue;
+    color: #3965ce;
     font-weight: bold;
 }
