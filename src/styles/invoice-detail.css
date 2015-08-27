@@ -47,18 +47,20 @@
 
 /*Customize */
 .invoice-detail .row {
-    padding-left: 30px;
+    padding-left: 4vw;
 }
 
 .invoice-detail .color-sky-blue {
     background: #0098CD;
     color: #fff;
     font-size: 5vw;
+    height: 41.338vw;
 }
 
 .invoice-detail .dates {
-    margin-top: 30px;
-    margin-right: 20px;
+    margin-top: 4.28vw;
+    margin-right: 3.75vw;
+    font-size: 3.2vw;
 }
 
 .invoice-detail .dates ul li span {
@@ -69,7 +71,7 @@
 
 .invoice-detail .dates ul li .dates-bold {
     font-weight: bold;
-    font-size: 4.5vw;
+    font-size: 3.2vw;
     letter-spacing: 1px;
 }
 
@@ -79,7 +81,7 @@
 }
 
 .invoice-detail .invoice {
-    margin-top: 30px;
+    margin-top: 4vw;
 }
 
 .invoice-detail .ss-navigateright {
@@ -88,33 +90,43 @@
 }
 
 .invoice-detail .invoice ul li:first-child {
-    font-size: 8vw;
+    font-size: 6.65vw;
+}
+
+.invoice-detail .more span {
+    font-size: 3.2vw;
 }
 
 .invoice-detail .invoice ul li:nth-child(2) {
     letter-spacing: 1px;
+    font-size: 4vw;
+}
+
+.invoice-detail .invoice ul li:nth-child(3) {
+    font-size: 4.55vw;
 }
 
 .invoice-detail .balance {
     background: #24486C;
     color: #fff;
-    font-size: 7vw;
-    padding: 5px 15px 5px 0;
-    border: 3px solid #24486C;
-    width: 60%;
+    font-size: 8.01vw;
+    padding: 2vw 3.75vw 0 0;
+    border-bottom: 3px solid #24486C;
+    width: 45.75vw;
+    height: 12vw;
+    margin-top: 2vw;
 }
 
 .invoice-detail .triangle {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 39px 40px 0;
-    border-color: transparent #1F405E transparent transparent;
+    border-width: 0 40px 40px 0;
+    border-color: #fff #1F405E #fff #fff;
 }
 
 .invoice-detail .blank {
-    width: 45%;
-    border-right: 3px solid #1F405E;
+    width: 59.35%;
 }
 
 .invoice-detail .payment {
@@ -123,10 +135,13 @@
     font-size: 4vw;
     padding-bottom: 15px;
     padding-top: 5px;
-    padding-right: 20px;
-    padding-left: 10px;
+    padding-right: 3.75vw;
     border-left: 1px solid #24486C;
-    padding-left: 8.3px;
+    padding-left: 2px;
+}
+
+.invoice-detail .payment span {
+    font-size: 3.45vw;
 }
 
 .invoice-detail .fa {
@@ -134,13 +149,13 @@
 }
 
 .invoice-detail .details {
-    padding-top: 15px;
+    padding-top: 4px;
 }
 
 .invoice-detail .amount {
-    font-size: 5vw;
-    margin-right: 20px;
-    margin-top: 20px;
+    font-size: 4.55vw;
+    margin-right: 3.75vw;
+    margin-top: 2.5vw;
     width: 50%;
 }
 
@@ -152,34 +167,39 @@
 }
 
 .invoice-detail .product {
-    margin-top: 20px; 
-    font-size: 5vw;
+    font-size: 3.55vw;
+    margin-top: 2.5vw;
 }
 
 .invoice-detail .product-detail {
-    margin-top: 5px;
+    margin-top: 3px;
     margin-bottom: 5px; 
     font-size: 4vw;
     color: #000;
 }
 
-.invoice-detail .product-detail .description {
-    font-weight: bold;
+.invoice-detail .product-detail .taxable {
+    color: #969696;
+    font-size: 3.55vw;
 }
 
-.invoice-detail .product-detail .taxable {
-    color: #B7B7B7;
+.invoice-detail .product-detail .taxable i {
+    font-style: initial;
+    margin-left: 3.3vw;
+    margin-right: 3.4vw;
 }
 
 .invoice-detail .border-double {
-    margin-bottom: 5px;
+    margin-bottom: 4.8vw;
     padding-bottom: 5px;
-    border-bottom: 3px double #C4C4C4;
+    margin-left: 4vw;
+    border-bottom: 3px double #DDDDDD;
+    padding-left: 0;
 }
 
 .invoice-detail .description {
-    margin-top: 5px;
     width: 100%;
+    font-size: 3.55vw;
 }
 
 .invoice-detail .description-price {
@@ -187,21 +207,34 @@
     font-size: 5vw;
 }
 
-
-.invoice-detail .total-text, .invoice-detail .total-price {
+.invoice-detail .total-text {
     font-weight: bold;
     width: 65%;
+    text-align: right;
+    color: #969696;
+    font-size: 4vw;
+    margin-top: 3px
+}
+
+.invoice-detail .total-price {
+    font-size: 4.8vw;
+    width: 35%;
     text-align: right;
 }
 
 .invoice-detail .payment-text {
     width: 65%;
     text-align: right;
+    color: #969696;
+    margin-top: 3vw;
+    font-size: 4vw;
 }
 
-.invoice-detail .total-price, .invoice-detail .payment-price {
+.invoice-detail .payment-price {
     width: 35%;
     text-align: right;
+    margin-top: 2vw;
+    font-size: 4.8vw;
 }
 
 .invoice-detail .circles {
@@ -217,7 +250,11 @@
     margin-left: 20px;
 }
 
+.invoice-detail .sign {
+    padding-left: 5.35vw;
+}
+
 .invoice-detail .sign p {
-    font-size: 5vw;
-    color: #999;
+    font-size: 3vw;
+    color: #161616;
 }

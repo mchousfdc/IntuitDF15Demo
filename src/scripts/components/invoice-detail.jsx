@@ -34,7 +34,7 @@ module.exports = React.createClass({
                         <ul>
                             <li>{ invoice.title }</li>
                             <li>{ invoice.id }</li>
-                            <li>{ invoice.store }  <i className="ss-gizmo ss-navigateright"></i></li>
+                            <li>{ invoice.store } <i className="ss-gizmo ss-navigateright"></i></li>
                         </ul>
                     </div>
                     <div className="dates fr text-right">
@@ -49,7 +49,7 @@ module.exports = React.createClass({
                                 <p className="date-text fl text-right">Due</p> 
                                 <span className='dates-bold'>
                                     { Moment().add( { days:invoice.due } )
-                                        .format('D/M/YY') }
+                                        .format('M/D/YY') }
                                 </span>
                             </li>
                         </ul>
@@ -57,8 +57,7 @@ module.exports = React.createClass({
                     <div className="clear"></div>
                     <div className="details">
                         <div className="more fl">
-                            <span>More <i className="ss-gizmo ss-fastforward"></i>
-                            </span>
+                            <span>More <i className="ss-gizmo ss-fastforward"></i></span>
                         </div>
                         <div className="balance fr text-right">
                             { this.convertCurrency(invoice.balance, true) }
@@ -87,7 +86,7 @@ module.exports = React.createClass({
                 <div className="clear"></div>
                 <div className="row border-double">
                     <div className="product-detail">
-                        <span className='description'>{ invoice.item.detail }</span> <span className='taxable'>each | Non-Taxable</span>
+                        <span className='description'>{ invoice.item.detail }</span> <span className='taxable'>each <i>| </i> Non-Taxable</span>
                     </div>
                 </div>
                 <div className="row description-price">
