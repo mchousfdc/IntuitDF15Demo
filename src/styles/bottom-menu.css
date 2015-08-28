@@ -87,7 +87,7 @@
 
 .bottom-menu .menu li.action-menu-item:active {
     opacity: 0.9;
-    color: red;
+    color: #24486C;
     font-weight: bold;
 }
 
