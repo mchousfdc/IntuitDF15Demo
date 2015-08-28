@@ -51,10 +51,9 @@
 /*Customize */
 .sales-forms .row {
     width: 100%;
-    padding: 5px 5px 0px 10px;
+    padding: 5px 5px 0px 15px;
     font-size: 5vw;
     min-height: 40px;
-    border-bottom: 2px solid #eee;
 }
 
 .sales-forms .row:active {
@@ -66,7 +65,7 @@
 }
 
 .sales-forms .row .options {
-    margin: 5px 0 0 0;
+    margin: 5px 10px 0 0;
 }
 
 .sales-forms .options .title {
@@ -79,7 +78,7 @@
 .sales-forms .options .title p:first-child{
     font-weight: bold;
     color: #000;
-    font-size: 5vw;
+    font-size: 4.55vw;
 }
 
 .sales-forms .options .option {
@@ -94,4 +93,5 @@
     text-transform: uppercase;
     color: #7591AE;
     margin-top: 10px;
+    font-size: 4.5vw;
 }
