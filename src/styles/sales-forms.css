@@ -49,14 +49,6 @@
 }
 
 /*Customize */
-/*.sales-forms .row {
-    width: 100%;
-    padding: 5px 5px 0px 10px;
-    font-size: 5vw;
-    min-height: 40px;
-    border-bottom: 2px solid #eee;
-}*/
-
 .sales-forms .row {
     width: 100%;
     padding: 5px 5px 0px 15px;
@@ -71,10 +63,6 @@
 .sales-forms .blank {
     background-color: #fff;
 }
-
-/*.sales-forms .row .options {
-    margin: 5px 0 0 0;
-}*/
 
 .sales-forms .row .options {
     margin: 5px 10px 0 0;
