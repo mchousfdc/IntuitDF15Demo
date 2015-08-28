@@ -54,80 +54,91 @@
     margin: 10px 2px 5px 2px;
 }
 
-.send-invoice .row input {
+.send-invoice .row .input {
     border: none;
-    height: 50px;
-    width: 68%;
+    height: 38px;
     font-size: 5vw;
+    background: #fff;
 }
 
+.send-invoice .to-text {
+    width: 68.1%;
+}
 .send-invoice .subject-text {
+    border: none;
+    height: 36px;
+    font-size: 4.5vw;
+    background: #fff;
+    width: 74%;
     text-overflow: ellipsis;
 }
 
 .send-invoice .to-placeholder {
     border: 1px solid #fff;
-    height: 50px;
-    width: 15%;
+    height: 36px;
+    width: 16.9%;
     background: #fff;
 }
 
 .send-invoice .to-placeholder p {
-    color: #B0B0B0;
-    margin: 10px 5px 5px 5px;
-    font-size: 6vw;
+    color: #969696;
+    margin: 1.75vw 3.75vw;
+    font-size: 4.55vw;
     font-weight: bold;
 }
 
 .send-invoice .subject-placeholder {
-    border: 1px solid #fff;
-    height: 50px;
-    width: 30%;
+    height: 38px;
+    width: 24.9%;
     background: #fff;
 }
 
 .send-invoice .subject-placeholder p {
-    color: #B0B0B0;
-    margin: 10px 5px 5px 5px;
-    font-size: 6vw;
+    color: #969696;
+    margin: 1.75vw 3.75vw;
+    font-size: 4.55vw;
     font-weight: bold;
 }
 
 .send-invoice .to-icon {
     border: 1px solid #fff;
-    height: 50px;
-    width: 15%;
+    height: 36px;
+    width: 12.5%;
     background: #fff;
 }
 
 .send-invoice .content-icon {
-    margin: 10px 5px;
+    margin: 1.867vw 1.07vw;
 }
 
 .send-invoice .to-icon i {
     color: #fff;
-    background: #3965CE; 
-    padding: 10px;
-    font-size: 6vw;
+    background: #3965CE;
+    padding: 7px 5px;
+    font-size: 4.5vw;
     font-weight: bold;
 }
 
 .send-invoice .to-icon .border-contact {
-    background: #398ACE;
-    padding: 10px 0px;
+    background: #3965CE;
+    padding: 7px 0px;
     margin-right: 1px;
     border-radius: 100% 0 0 100%;
 }
 
 .send-invoice .row .send-text {
     border: 1px solid #fff;
-    width: 96%;
+    width: 97.5%;
     height: 400px;
     margin: 0 2px;
-    font-size: 5vw;
+    font-size: 4.5vw;
     background-color: #ffffff;
+}
+.send-invoice .row .send-text li {
+    margin-left: 3.75vw;
 }
 
 .send-invoice .row .send-text li:first-child {
+    margin-top: 5vw;
     margin-bottom: 5vw;
 }

@@ -25,7 +25,7 @@ module.exports = React.createClass({
                 <form action="#" method="#" id="send-invoice" className="form-send">
                     <div className="row">
                         <div className="to-placeholder fl"><p>To:</p></div>
-                        <input type="text" name="" id="" className="to-text fl" />
+                        <div className="input to-text fl" ></div>
                         <div className="to-icon fl">
                             <div className="content-icon">
                                 <i className="border-contact">&nbsp;</i>
