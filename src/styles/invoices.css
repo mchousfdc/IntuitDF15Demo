@@ -23,6 +23,10 @@
     height: 16.8vw;
 }
 
+.invoices .invoice-list .invoice:active {
+    opacity: 0.5;
+}
+
 .invoices .summary .balance,
 .invoices .summary .text {
     margin: 2% 5%;
