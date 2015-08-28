@@ -3,6 +3,7 @@
     color: #888583;
     text-align: center;
     margin-top: 2px;
+    font-weight: normal;
 }
 
 .template-selector span {
@@ -19,6 +20,7 @@
     color: #000000;
     height: 30px;
     line-height: 30px;
+    font-weight: bold;
 }
 
 .template-selector .second-line-prev {

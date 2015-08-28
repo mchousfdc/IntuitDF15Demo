@@ -81,7 +81,7 @@ module.exports = React.createClass({
                         Message
                     </div>
                 </div>
-                <div className="row blank">
+                <div className="row blank send-textarea">
                     <ul className='send-text'>
                         { templateBody }
                     </ul>
