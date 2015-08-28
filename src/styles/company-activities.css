@@ -13,6 +13,10 @@
     height: 16.8vw;
 }
 
+.company-activites .activity:active {
+    opacity: 0.5;
+}
+
 .company-activites .activity .title,
 .company-activites .activity .amount,
 .company-activites .activity .comment {
