@@ -77,9 +77,8 @@
 }
 
 .default-message .options .title .template-name {
-    font-weight: bold;
     color: #000;
-    font-size: 5vw;
+    font-size: 5.5vw;
     width: 94vw;
 }
 
@@ -95,16 +94,16 @@
     text-transform: uppercase;
     color: #7591AE;
     margin-top: 10px;
+    font-size: 4.5vw;
 }
 
 .default-message .subject-text {
     border: none;
-    font-size: 5vw;
+    font-size: 4.5vw;
     white-space: nowrap;
     width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-weight: bold;
     padding-top: 10px;
     margin-bottom: 0px;
 }
@@ -114,17 +113,18 @@
     width: 96%;
     height: 260px;
     margin: 0 2px;
-    font-size: 5vw;
-    font-weight: bold;
+    font-size: 4.5vw;
+}
+
+.default-message .send-text li:first-child {
+    margin-top: 5vw;
 }
 
 .default-message .send-text li {
-    font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 5vw;
 }
 
 .default-message .send-text li:nth-child(2) {
-    font-weight: bold;
     margin-bottom: 0px;
 }
 
@@ -144,6 +144,10 @@
     color: #ccc;
     font-size: 5vw;
     font-weight: bold;
+}
+
+.default-message .send-textarea {
+    padding-top: 0px;
 }
 
 /*Toggle Apple */
@@ -240,12 +244,11 @@
 }
 .default-message .options .selector.active {
     height: auto;
-    margin: 12vw auto 7vw;
+    margin: 2vw auto 2vw;
     visibility: visible;
 }
 
 .default-message .options .title .template-name.active {
-    color: #4510dc;
     border-bottom: solid 1px #ededed;
     padding-bottom: 2vw;
 }
