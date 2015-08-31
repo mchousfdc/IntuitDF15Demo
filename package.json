@@ -3,7 +3,7 @@
     "description": "Intuit web app",
     "repository": {
         "type": "git",
-        "url": "https://github.com/salesforce-demos/intuit-demo"
+        "url": "https://github.com/mchousfdc/IntuitDF15Demo"
     },
     "version": "0.0.1",
     "devDependencies": {
