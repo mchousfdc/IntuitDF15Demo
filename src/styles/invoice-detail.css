@@ -178,6 +178,10 @@
     color: #000;
 }
 
+.invoice-detail .product-detail .description {
+    margin-right: 5px;
+}
+
 .invoice-detail .product-detail .taxable {
     color: #969696;
     font-size: 3.55vw;
