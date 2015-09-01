@@ -69,7 +69,7 @@
     height: 36px;
     font-size: 4.5vw;
     background: #fff;
-    width: 74%;
+    width: 278px;
     text-overflow: ellipsis;
 }
 
@@ -89,7 +89,7 @@
 
 .send-invoice .subject-placeholder {
     height: 38px;
-    width: 24.9%;
+    width: 93px;
     background: #fff;
 }
 
@@ -128,9 +128,8 @@
 
 .send-invoice .row .send-text {
     border: 1px solid #fff;
-    width: 97.5%;
+    width: 369px;
     height: 400px;
-    margin: 0 2px;
     font-size: 4.5vw;
     background-color: #ffffff;
 }
