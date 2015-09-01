@@ -53,6 +53,7 @@ li {
 .react-menu-nav {
     width: 75%;
     position: absolute;
+    top: 0;
     background-color: #193048;
     color: #fff;
     overflow-y: hidden; /*scroll;*/
@@ -66,12 +67,16 @@ li {
 }
 
 .react-menu-nav.menu-open {
-    height: 100vh;
+    height: 667px;
     z-index: 3;
     transition-property: z-index;
     -webkit-transition-property: z-index;
     transition-delay: 0.5s;
     -webkit-transition-delay: 0.5s;
+}
+
+.react-menu-nav .container {
+    padding-top: 77px;
 }
 
 .react-menu-nav .title {
