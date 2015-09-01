@@ -42,7 +42,7 @@
 
 .header .left-icon {
     float: left;
-    margin: -2.5% 0 0 4%;
+    margin: -3.5% 0 0 4%;
     color: #3965ce;
     width: 30vw;
     z-index: 3;
@@ -58,7 +58,7 @@
     display: inline-block;    
     float: right;    
     color: #3965ce;
-    margin: -2.5% 3%;
+    margin: -3.5% 3%;
     z-index: 3;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .header .left-icon.ss-navigateleft {
-    margin: -6.5% 0 0 1%;
+    margin: -7.5% 0 0 1%;
 }
 
 .header .left-icon.menu-icon {
