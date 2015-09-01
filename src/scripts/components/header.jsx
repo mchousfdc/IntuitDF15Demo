@@ -62,7 +62,14 @@ module.exports = React.createClass({
             };
         
         if ( pageTexts ) {
-            headerSectionsMap.title = pageTexts.title;
+            headerSectionsMap.title = <span className='title'                         
+                    onClick={ 
+                    page == 'default-message' ?
+                        this.resetFlow:
+                        null
+                    }>
+                        { pageTexts.title }
+                </span>;
 
             if ( pageTexts.left ) {
                 headerSectionsMap.leftSection = <span className="left-icon ss-gizmo ss-navigateleft"
@@ -72,12 +79,7 @@ module.exports = React.createClass({
             } 
 
             if ( pageTexts.right ) {
-                headerSectionsMap.rightSection = <span className="right-icon"
-                    onClick={ 
-                        page == 'default-message' ?
-                            this.resetFlow:
-                            null
-                         } >
+                headerSectionsMap.rightSection = <span className="right-icon">
                         { pageTexts.right }
                     </span>;    
             }
@@ -94,9 +96,7 @@ module.exports = React.createClass({
         return (
             <div>
                 <div className="header">
-                    <span className='title' >                        
-                        { title }
-                    </span>
+                    { title }
                     { leftSection }
                     { rightSection }
                 </div>
