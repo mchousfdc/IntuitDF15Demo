@@ -58,7 +58,7 @@
     display: inline-block;    
     float: right;    
     color: #3965ce;
-    margin: -11px 3%;
+    margin: -17px 3% 0 3%;
     z-index: 3;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .header .left-icon.ss-navigateleft {
-    margin: -27px 0 0 1%;
+    margin: -35px 0 0 1%;
 }
 
 .header .left-icon.menu-icon {
