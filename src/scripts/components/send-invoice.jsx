@@ -34,13 +34,14 @@ module.exports = React.createClass({
                         </div>
                     </div>
                     <div className="clear"></div>
-                    <div className="row">
+                    <div className="row subject-row">
                         <div className="subject-placeholder fl">
                             <p>Subject:</p>
                         </div>
                         <input type="text" name="" id="" 
                             className="subject-text fl"
                             defaultValue={ template.subject } />
+                        <div className="clear"></div>
                     </div>
                     <div className="clear"></div>
                     <div className="row">                        
@@ -53,4 +54,3 @@ module.exports = React.createClass({
         );
     }
 });
-
