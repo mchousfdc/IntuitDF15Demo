@@ -34,12 +34,12 @@ module.exports = React.createClass({
         });
     },
     openMenu: function () {
-        $('.menu').show();        
+        $('.menu').show();
         this.toggleOverlay();
         setTimeout( function () {
-            $('.menu').toggleClass('show');        
+            $('.menu').addClass('show');
         }, 200);
-        
+
     },
     closeMenu: function () {
         $('.menu')
@@ -61,7 +61,7 @@ module.exports = React.createClass({
         } else {
             console.log('window.webkit.messageHandlers is not defined ' +
                 'in your environment')
-        }        
+        }
     },
     goToNextScreen: function () {
         this.closeMenu();
@@ -76,12 +76,12 @@ module.exports = React.createClass({
                 function (item, i) {
                     var label = item.onClickEvent ?
                         <a className="label"
-                            onClick={ 
+                            onClick={
                                 this.goToNextScreen
                             } >
                             { item.label }
                         </a> :
-                        <a className="label" 
+                        <a className="label"
                             onClick={
                                 this.closeMenu
                             } >
@@ -96,12 +96,12 @@ module.exports = React.createClass({
                     );
                 }.bind(this)
             ),
-            openCloseMenuIcon = overlay ? 
+            openCloseMenuIcon = overlay ?
                 <li className="open-menu-icon ss-gizmo ss-download"
                             onClick={ this.closeMenu }></li> :
                 <li className="ss-gizmo ss-upload"
                             onClick={ this.openMenu }></li>;
-        
+
         return (
             <div className="bottom-menu">
 
