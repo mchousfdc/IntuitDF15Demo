@@ -15,9 +15,12 @@ module.exports = React.createClass({
         }
     },
     toggleMenu: function () {
-        this.setState({ displayMenuNav: !this.state.displayMenuNav });
-        $('.view-container, .react-menu-nav, .header').toggleClass('menu-open');
-        // $('.content').toggleClass('not-active');
+        if ( $('.view-container').hasClass('menu-open') ) {
+            $('.view-container, .react-menu-nav, .header').removeClass('menu-open');
+        } else {
+            $('.view-container, .react-menu-nav, .header').addClass('menu-open');
+        }
+        $('.content').toggleClass('not-active');
     },
     resetFlow: function () {
         navigate('/');
