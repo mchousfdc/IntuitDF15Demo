@@ -51,7 +51,7 @@ module.exports = React.createClass({
             .removeClass('show');
     },
     startSOS: function () {
-        this.closeMenu();
+        // this.closeMenu();
 
         if ( window.webkit ) {
             window.webkit.messageHandlers.nativeHandler.postMessage(
