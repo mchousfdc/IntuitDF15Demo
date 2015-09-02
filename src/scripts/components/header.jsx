@@ -53,7 +53,7 @@ module.exports = React.createClass({
         //         navigate(id);
         //     }
         // );
-        $('.view-container, .react-menu-nav, .header')
+        $('.view-container')
             .toggleClass('menu-open').one('webkitTransitionEnd', function () { navigate(id); });
     },
     getHeaderSectionsFromPath: function () {
