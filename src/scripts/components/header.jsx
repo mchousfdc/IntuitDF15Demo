@@ -72,7 +72,8 @@ module.exports = React.createClass({
                 </span>;
 
             if ( pageTexts.left ) {
-                headerSectionsMap.leftSection = <span className="left-icon ss-gizmo ss-navigateleft"
+                headerSectionsMap.leftSection = <span 
+                    className="left-icon ss-gizmo ss-navigateleft"
                     onClick={ this.goBack }>
                         { pageTexts.left }
                     </span>; 
