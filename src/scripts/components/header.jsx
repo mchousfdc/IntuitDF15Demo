@@ -44,7 +44,7 @@ module.exports = React.createClass({
         }
     },
     goTo: function (id) {
-        this.toggleMenu();
+        // this.toggleMenu();
         // setTimeout( function () {
         //     navigate(id);
         // }, 500);
