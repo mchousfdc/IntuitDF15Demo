@@ -44,7 +44,7 @@ module.exports = React.createClass({
         }
     },
     goTo: function (id) {
-        // this.toggleMenu();
+        this.toggleMenu();
         // setTimeout( function () {
         //     navigate(id);
         // }, 500);
@@ -54,7 +54,7 @@ module.exports = React.createClass({
         //     }
         // );
         $('.view-container')
-            .toggleClass('menu-open').one('webkitTransitionEnd', function () { navigate(id); });
+            .one('webkitTransitionEnd', function () { navigate(id); });
     },
     getHeaderSectionsFromPath: function () {
         var page = this.props.path.split('/')[1],
