@@ -17,7 +17,7 @@ module.exports = React.createClass({
     toggleMenu: function () {
         this.setState({ displayMenuNav: !this.state.displayMenuNav });
         $('.view-container, .react-menu-nav, .header').toggleClass('menu-open');
-        $('.content').toggleClass('not-active');
+        // $('.content').toggleClass('not-active');
     },
     resetFlow: function () {
         navigate('/');
@@ -45,17 +45,16 @@ module.exports = React.createClass({
     },
     goTo: function (id) {
         this.toggleMenu();
-        setTimeout( function () {
-            $('.view-container')
-                .one('webkitTransitionEnd', function () { navigate(id); });
-        }, 500);
+        // setTimeout( function () {
+        //     navigate(id);
+        // }, 500);
         // $('.header').one('webkitTransitionEnd',
         //     function () {
         //         navigate(id);
         //     }
         // );
-        // $('.view-container')
-        //     .one('webkitTransitionEnd', function () { navigate(id); });
+        $('.view-container')
+            .one('webkitTransitionEnd', function () { navigate(id); });
     },
     getHeaderSectionsFromPath: function () {
         var page = this.props.path.split('/')[1],
