@@ -45,16 +45,17 @@ module.exports = React.createClass({
     },
     goTo: function (id) {
         this.toggleMenu();
-        // setTimeout( function () {
-        //     navigate(id);
-        // }, 500);
+        setTimeout( function () {
+            $('.view-container')
+                .one('webkitTransitionEnd', function () { navigate(id); });
+        }, 500);
         // $('.header').one('webkitTransitionEnd',
         //     function () {
         //         navigate(id);
         //     }
         // );
-        $('.view-container')
-            .one('webkitTransitionEnd', function () { navigate(id); });
+        // $('.view-container')
+        //     .one('webkitTransitionEnd', function () { navigate(id); });
     },
     getHeaderSectionsFromPath: function () {
         var page = this.props.path.split('/')[1],
