@@ -37,7 +37,7 @@ module.exports = React.createClass({
         $('.menu').show();        
         this.toggleOverlay();
         setTimeout( function () {
-            $('.menu').toggleClass('show');        
+            $('.menu').addClass('show');        
         }, 200);
         
     },
