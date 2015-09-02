@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     position: fixed;
-    font-size: 5vw;
+    font-size: 17px;
     font-weight: bold;
     z-index: 3;
     min-height: 7vh;
@@ -24,13 +24,13 @@
     width: 100vw;
     position: absolute;
     top: 35%;
-    margin: 3% auto;
+    margin: 15px auto 10px auto;
     text-align: center;
     color: #000000;
     font-family: 'HelveticaNeue', sans;
     z-index: 2;
     display: inline-block;
-    font-size: 5.3vw;   
+    font-size: 17px;   
 }
 
 .header .title .trademark {
@@ -42,7 +42,7 @@
 
 .header .left-icon {
     float: left;
-    margin: -3.5% 0 0 4%;
+    margin: -15px 0 0 4%;
     color: #3965ce;
     width: 30vw;
     z-index: 3;
@@ -58,7 +58,7 @@
     display: inline-block;    
     float: right;    
     color: #3965ce;
-    margin: -3.5% 3%;
+    margin: -17px 3% 0 3%;
     z-index: 3;
 }
 
@@ -66,11 +66,11 @@
     height: 10vw;
     width: 10vw;
     font-size: 7vw;
-    margin: -4% 1%;
+    margin: -18px 1%;
 }
 
 .header .left-icon.ss-navigateleft {
-    margin: -7.5% 0 0 1%;
+    margin: -33px 0 0 1%;
 }
 
 .header .left-icon.menu-icon {
