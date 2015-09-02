@@ -14,13 +14,9 @@ module.exports = React.createClass({
             displayMenuNav: false
         }
     },
-    toggleMenu: function (e) {
-        e.preventDefault();
-        if ( $('.view-container').hasClass('menu-open') ) {
-            $('.view-container, .react-menu-nav, .header').removeClass('menu-open');
-        } else {
-            $('.view-container, .react-menu-nav, .header').addClass('menu-open');
-        }
+    toggleMenu: function () {
+        this.setState({ displayMenuNav: !this.state.displayMenuNav });
+        $('.view-container, .react-menu-nav, .header').toggleClass('menu-open');
         $('.content').toggleClass('not-active');
     },
     resetFlow: function () {
@@ -49,16 +45,9 @@ module.exports = React.createClass({
     },
     goTo: function (id) {
         this.toggleMenu();
-        // setTimeout( function () {
-        //     navigate(id);
-        // }, 500);
-        // $('.header').one('webkitTransitionEnd',
-        //     function () {
-        //         navigate(id);
-        //     }
-        // );
-        $('.view-container')
-            .one('webkitTransitionEnd', function () { navigate(id); });
+        setTimeout( function () {
+            navigate(id);
+        }, 500);
     },
     getHeaderSectionsFromPath: function () {
         var page = this.props.path.split('/')[1],
@@ -73,7 +62,7 @@ module.exports = React.createClass({
             };
         
         if ( pageTexts ) {
-            headerSectionsMap.title = <span className='title'                         
+            headerSectionsMap.title = <span className='title'
                     onClick={ 
                     page == 'default-message' ?
                         this.resetFlow:
@@ -83,7 +72,8 @@ module.exports = React.createClass({
                 </span>;
 
             if ( pageTexts.left ) {
-                headerSectionsMap.leftSection = <span className="left-icon ss-gizmo ss-navigateleft"
+                headerSectionsMap.leftSection = <span 
+                    className="left-icon ss-gizmo ss-navigateleft"
                     onClick={ this.goBack }>
                         { pageTexts.left }
                     </span>; 
@@ -96,7 +86,7 @@ module.exports = React.createClass({
             }
         }
 
-        return headerSectionsMap; 
+        return headerSectionsMap;
     },
     render: function () {        
         var headerSectionsMap = this.getHeaderSectionsFromPath(),
