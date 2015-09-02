@@ -54,8 +54,7 @@ module.exports = React.createClass({
         //     }
         // );
         $('.view-container, .react-menu-nav, .header')
-            .one('webkitTransitionEnd', function () { navigate(id); })
-            .toggleClass('menu-open');
+            .toggleClass('menu-open').one('webkitTransitionEnd', function () { navigate(id); });
     },
     getHeaderSectionsFromPath: function () {
         var page = this.props.path.split('/')[1],
