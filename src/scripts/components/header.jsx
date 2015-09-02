@@ -14,7 +14,8 @@ module.exports = React.createClass({
             displayMenuNav: false
         }
     },
-    toggleMenu: function () {
+    toggleMenu: function (e) {
+        e.preventDefault();
         if ( $('.view-container').hasClass('menu-open') ) {
             $('.view-container, .react-menu-nav, .header').removeClass('menu-open');
         } else {
