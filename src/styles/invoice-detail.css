@@ -112,7 +112,7 @@
     font-size: 8.01vw;
     padding: 2vw 3.75vw 0 0;
     border-bottom: 3px solid #24486C;
-    width: 45.75vw;
+    width: 175px;
     height: 12vw;
     margin-top: 2vw;
 }
@@ -126,7 +126,7 @@
 }
 
 .invoice-detail .blank {
-    width: 59.35%;
+    width: 210px;
 }
 
 .invoice-detail .payment {
@@ -136,9 +136,10 @@
     padding-bottom: 14px;
     padding-top: 5px;
     padding-right: 13px;
-    border-left: 2px solid #24486C;
+    border-left: 1px solid #24486C;
     border-top: 1px solid #24486C;
-    padding-left: 2px;
+    width: 130px;
+    padding-left: 5px;
 }
 
 .invoice-detail .payment span {
