@@ -50,8 +50,17 @@ module.exports = React.createClass({
                 }.bind(this) )
             .removeClass('show');
     },
+    closeMenuWithoutAnimation: function () {
+        $('.menu')
+            .removeClass('show')
+            .hide();
+
+        this.setState({
+            showOverlay: false
+        });
+    },
     startSOS: function () {
-        this.closeMenu();
+        this.closeMenuWithoutAnimation();
 
         if ( window.webkit ) {
             window.webkit.messageHandlers.nativeHandler.postMessage(
