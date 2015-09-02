@@ -48,11 +48,14 @@ module.exports = React.createClass({
         // setTimeout( function () {
         //     navigate(id);
         // }, 500);
-        $('.header').one('webkitTransitionEnd',
-            function () {
-                navigate(id);
-            }
-        );
+        // $('.header').one('webkitTransitionEnd',
+        //     function () {
+        //         navigate(id);
+        //     }
+        // );
+        $('.view-container, .react-menu-nav, .header')
+            .one('webkitTransitionEnd', function () { navigate(id); })
+            .toggleClass('menu-open');
     },
     getHeaderSectionsFromPath: function () {
         var page = this.props.path.split('/')[1],
