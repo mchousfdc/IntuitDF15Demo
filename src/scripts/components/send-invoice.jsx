@@ -41,6 +41,7 @@ module.exports = React.createClass({
                         <input type="text" name="" id="" 
                             className="subject-text fl"
                             defaultValue={ template.subject } />
+                        <div className="clear"></div>
                     </div>
                     <div className="clear"></div>
                     <div className="row">                        
