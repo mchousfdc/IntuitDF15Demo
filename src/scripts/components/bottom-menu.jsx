@@ -53,7 +53,9 @@ module.exports = React.createClass({
     startSOS: function () {
         // this.closeMenu();
         $('.menu').removeClass('show').hide();
-        this.toggleOverlay();
+        this.setState({
+            showOverlay: false
+        });
         if ( window.webkit ) {
             window.webkit.messageHandlers.nativeHandler.postMessage(
                 "start"
