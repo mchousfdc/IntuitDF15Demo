@@ -37,7 +37,7 @@ module.exports = React.createClass({
         $('.menu').show();        
         this.toggleOverlay();
         setTimeout( function () {
-            $('.menu').addClass('show');        
+            $('.menu').toggleClass('show');        
         }, 200);
         
     },
@@ -51,11 +51,8 @@ module.exports = React.createClass({
             .removeClass('show');
     },
     startSOS: function () {
-        // this.closeMenu();
-        $('.menu').removeClass('show').hide();
-        this.setState({
-            showOverlay: false
-        });
+        this.closeMenu();
+
         if ( window.webkit ) {
             window.webkit.messageHandlers.nativeHandler.postMessage(
                 "start"
