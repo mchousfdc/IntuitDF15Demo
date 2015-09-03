@@ -15,7 +15,6 @@ module.exports = {
             },
             "send-invoice": {
                 title: "Send Invoice",
-                left: "Cancel",
                 right: "Send"
             },
             "settings": {
@@ -26,13 +25,13 @@ module.exports = {
                 title: "Sales Forms",
                 left: "Settings",
                 right: ' '
-            },                
+            },
             "default-message": {
                 title: "Default Message",
                 left: "Cancel",
                 right: "Save"
             }
-        }            
+        }
     },
     // Action Menu
     actionMenu: {
@@ -56,5 +55,5 @@ module.exports = {
     templateSelector: {
         simulateDelta: false,
         selectorHeight: 40
-    } 
+    }
 }
