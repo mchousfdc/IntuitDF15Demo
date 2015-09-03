@@ -6,52 +6,52 @@ module.exports = {
         {
             id: 1003,
             title: "Invoice",
-            store: "Sanfran grocery",
+            store: "Sanfran Grocery",
             prefix: "for",
-            amount: 100,
+            amount: 200,
             comment: "Added today",
             date: Moment().format('M/D/YY'),
             due: 30,
             item: {
-                product: 'Apple', 
-                detail: '1.00 x 100.00'
+                product: 'Apple',
+                detail: '2.00 x 100.00'
             }
         },
         {
             id: 1002,
             title: "Invoice",
-            store: "Sanfran grocery",
+            store: "Sanfran Grocery",
             prefix: "for",
-            amount: 25000,
+            amount: 700,
             comment: "Edited 12 days ago",
             date: Moment().subtract( { days:12 } )
                     .format('M/D/YY'),
             due: 18,
             item: {
-                product: 'Bar', 
-                detail: '500.00 x 50.00'
+                product: 'Bar',
+                detail: '7.00 x 100.00'
             },
-            payments: [        
+            payments: [
                 {
                     title: "Payment",
-                    store: "Sanfran grocery",
+                    store: "Sanfran Grocery",
                     prefix: "from",
-                    amount: 5000,
+                    amount: 200,
                     comment: "Added 12 days ago"
                 },
                 {
                     title: "Payment",
-                    store: "Sanfran grocery",
+                    store: "Sanfran Grocery",
                     prefix: "from",
-                    amount: 4500,
+                    amount: 300,
                     comment: "Added 12 days ago"
                 }
             ]
         },
-        {   
+        {
             id: 1001,
             title: "Invoice",
-            store: "Best Store",
+            store: "FreshFood Market",
             prefix: "for",
             amount: 100,
             comment: "Added 12 days ago",
@@ -59,7 +59,7 @@ module.exports = {
                     .format('M/D/YY'),
             due: 18,
             item: {
-                product: 'Apple', 
+                product: 'Apple',
                 detail: '1.00 x 100.00'
             }
         }
@@ -68,30 +68,30 @@ module.exports = {
     emailTemplates: [
         {
             type: "Invoice",
-            subject: "Invoice [Invoice No.] from Courtney Dreamforce",
+            subject: "Invoice [Invoice No.] from Samantha Smith",
             body: [
-                "Here is your invoice! We appreciate your prompt payment.",
+                "Please see your invoice below. We appreciate your payment!",
                 "Thanks for your business!",
-                "Courtney Dreamforce"
+                "Samantha Smith"
             ]
         },
         {
             type: "Estimate",
-            subject: "Estimate [Invoice No.] from Courtney Dreamforce",
+            subject: "Estimate [Invoice No.] from Samantha Smith",
             body: [
-                "Here's your Estimate! We appreciate your prompt payment.",
+                "Here is your Estimate! We appreciate your prompt payment.",
                 "Thanks for your business!",
-                "Courtney Dreamforce"
+                "Samantha Smith"
             ]
         },
         {
             type: "Sales Receipt",
-            subject: "Sales Receipt [Invoice No.] from Courtney Dreamforce",
+            subject: "Sales Receipt [Invoice No.] from Samantha Smith",
             body: [
                 "Here's your Sales Receipt! We appreciate your prompt payment.",
                 "Thanks for your business!",
-                "Courtney Dreamforce"
+                "Samantha Smith"
             ]
-        },            
-    ]    
+        },
+    ]
 };

@@ -6,7 +6,7 @@ require('gizmo/ss-gizmo.css');
 
 module.exports = React.createClass({
     goToLink: function(){
-        navigate('/sales-forms');
+        navigate('/default-message');
     },
     render: function() {
         return (
@@ -63,7 +63,7 @@ module.exports = React.createClass({
                     </div>
                 </div>
                 <div className="row blank">
-                    <div className="options" onClick={this.goToLink} >
+                    <div className="options">
                         <div className="title fl">
                             <p>Sales Forms</p>
                         </div>
@@ -80,8 +80,17 @@ module.exports = React.createClass({
                         <div className="clear"></div>
                     </div>
                 </div>
+                <div className="row blank">
+                    <div className="options" onClick={this.goToLink} >
+                        <div className="title fl">
+                            <p>Default email message</p>
+                        </div>
+                        <div className="option fr"><i className="ss-gizmo ss-navigateright"></i></div>
+                        <div className="clear"></div>
+                    </div>
+                </div>
                 <div className="row">
-                    
+
                 </div>
                 <div className="row blank">
                     <div className="options">
@@ -93,7 +102,7 @@ module.exports = React.createClass({
                     </div>
                 </div>
                 <div className="row">
-                    
+
                 </div>
                 <div className="row border-top">
                     <div className="options link">

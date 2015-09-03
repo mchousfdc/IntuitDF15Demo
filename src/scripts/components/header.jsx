@@ -9,14 +9,9 @@ require('standard/ss-standard.css');
 require('../../styles/header.css');
 
 module.exports = React.createClass({
-    getInitialState: function () {
-        return {
-            displayMenuNav: false
-        }
-    },
-    toggleMenu: function () {
-        this.setState({ displayMenuNav: !this.state.displayMenuNav });
-        $('.view-container, .react-menu-nav, .header').toggleClass('menu-open');
+    toggleMenu: function (callback) {
+        $('.view-container, .react-menu-nav, .header, .bottom-menu')
+            .toggleClass('menu-open');
         $('.content').toggleClass('not-active');
     },
     resetFlow: function () {
@@ -39,7 +34,7 @@ module.exports = React.createClass({
             if ( backUrl.lastIndexOf('/') == backUrl.length - 1 ) {
                 backUrl += invoiceId;
             }
-            
+
             navigate(backUrl);
         }
     },
@@ -60,10 +55,10 @@ module.exports = React.createClass({
                     onClick={ this.toggleMenu } >
                 </span>
             };
-        
+
         if ( pageTexts ) {
             headerSectionsMap.title = <span className='title'
-                    onClick={ 
+                    onClick={
                     page == 'default-message' ?
                         this.resetFlow:
                         null
@@ -72,27 +67,27 @@ module.exports = React.createClass({
                 </span>;
 
             if ( pageTexts.left ) {
-                headerSectionsMap.leftSection = <span 
+                headerSectionsMap.leftSection = <span
                     className="left-icon ss-gizmo ss-navigateleft"
                     onClick={ this.goBack }>
                         { pageTexts.left }
-                    </span>; 
-            } 
+                    </span>;
+            }
 
             if ( pageTexts.right ) {
                 headerSectionsMap.rightSection = <span className="right-icon">
                         { pageTexts.right }
-                    </span>;    
+                    </span>;
             }
         }
 
         return headerSectionsMap;
     },
-    render: function () {        
+    render: function () {
         var headerSectionsMap = this.getHeaderSectionsFromPath(),
             leftSection = headerSectionsMap.leftSection,
             title = headerSectionsMap.title,
-            rightSection = headerSectionsMap.rightSection;            
+            rightSection = headerSectionsMap.rightSection;
 
         return (
             <div>
@@ -109,30 +104,30 @@ module.exports = React.createClass({
                                 <li>
                                     Registers
                                 </li>
-                                <li onClick={ 
-                                    this.goTo.bind(null,'/')                                   
+                                <li onClick={
+                                    this.goTo.bind(null,'/')
                                 }>
-                                    Expenses 
+                                    Expenses
                                     <span className="plus">
                                         <span className="more">+</span>
                                     </span>
                                 </li>
                                 <li>
-                                    Estimates 
+                                    Estimates
                                     <span className="plus">
                                         <span className="more">+</span>
                                     </span>
                                 </li>
-                                <li onClick={ 
-                                     this.goTo.bind(null,'/invoices')                                  
+                                <li onClick={
+                                     this.goTo.bind(null,'/invoices')
                                 }>
-                                    Invoices 
+                                    Invoices
                                     <span className="plus">
                                         <span className="more">+</span>
                                     </span>
                                 </li>
                                 <li>
-                                    Sales Receipts 
+                                    Sales Receipts
                                     <span className="plus">
                                         <span className="more">+</span>
                                     </span>
