@@ -54,7 +54,6 @@ module.exports = React.createClass({
             (path.indexOf('sales-forms') > -1 && window.goingBack ) ||
             (path.indexOf('default-message') > -1 && window.goingBack ) ||
             (path.indexOf('invoice-detail') == 1) ||
-            (path.indexOf('send-invoice')  == 1) ||
             (path.indexOf('sales-forms') == 1 ) ||
             (path.indexOf('default-message') == 1 )
         ) {
