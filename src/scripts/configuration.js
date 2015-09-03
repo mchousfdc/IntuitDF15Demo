@@ -68,29 +68,29 @@ module.exports = {
     emailTemplates: [
         {
             type: "Invoice",
-            subject: "Invoice [Invoice No.] from Courtney Dreamforce",
+            subject: "Invoice [Invoice No.] from Samantha Smith",
             body: [
-                "Here is your invoice! We appreciate your prompt payment.",
+                "Please see your invoice below. We appreciate your payment!",
                 "Thanks for your business!",
-                "Courtney Dreamforce"
+                "Samantha Smith"
             ]
         },
         {
             type: "Estimate",
-            subject: "Estimate [Invoice No.] from Courtney Dreamforce",
+            subject: "Estimate [Invoice No.] from Samantha Smith",
             body: [
-                "Here's your Estimate! We appreciate your prompt payment.",
+                "Here is your Estimate! We appreciate your prompt payment.",
                 "Thanks for your business!",
-                "Courtney Dreamforce"
+                "Samantha Smith"
             ]
         },
         {
             type: "Sales Receipt",
-            subject: "Sales Receipt [Invoice No.] from Courtney Dreamforce",
+            subject: "Sales Receipt [Invoice No.] from Samantha Smith",
             body: [
                 "Here's your Sales Receipt! We appreciate your prompt payment.",
                 "Thanks for your business!",
-                "Courtney Dreamforce"
+                "Samantha Smith"
             ]
         },
     ]
