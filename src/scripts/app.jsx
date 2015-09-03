@@ -53,7 +53,10 @@ module.exports = React.createClass({
             (path.indexOf('settings') > -1 && window.goingBack ) ||
             (path.indexOf('sales-forms') > -1 && window.goingBack ) ||
             (path.indexOf('default-message') > -1 && window.goingBack ) ||
+            (path.indexOf('invoices') == 1) ||
             (path.indexOf('invoice-detail') == 1) ||
+            (path.indexOf('send-invoice') == 1 ) ||
+            (path.indexOf('settings') == 1) ||
             (path.indexOf('sales-forms') == 1 ) ||
             (path.indexOf('default-message') == 1 )
         ) {
