@@ -13,7 +13,7 @@
     bottom: 0;
     z-index: 3;
     font-family: 'HelveticaNeue';
-    margin: 0 3vw 3vw;
+    margin: 0 11px 11px;
     display: none;
     -webkit-transform: translateY(100%);
     -webkit-transition: -webkit-transform 0.4s ease;
@@ -24,8 +24,8 @@
 }
 
 .bottom-menu .action-menu {
-    width: 100vw;
-    height: 8vh;
+    width: 100%;
+    height: 50px;
     position: fixed;
     bottom: 0;
     z-index: 4;
@@ -40,15 +40,15 @@
 .bottom-menu .action-menu ul li {
     color: #3965ce;
     padding: 3% 6%;
-    font-size: 8vw;
+    font-size: 30px;
     display: -webkit-inline-box;
 }
 
 .bottom-menu .overlay {
-    width: 100vw;
-    height: 111vh;
+    width: 100%;
+    height: 695px;
     position: absolute;
-    top: -20vw;
+    top: -75px;
     z-index: 3;
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
@@ -57,8 +57,8 @@
 .bottom-menu .menu li.action-menu-item {
     background-color: #ffffff;
     border-bottom: 1px solid #d3d3d3;
-    height: 8vh;
-    width: 94vw;
+    height: 50px;
+    width: 352px;
     position: relative;
     color: #3965ce;
 }
@@ -75,24 +75,17 @@
 }
 
 .bottom-menu .menu li.action-menu-item:last-child {
-    margin-top: 2vw;
+    margin-top: 7px;
     border-radius: 5px;
-}
-
-.bottom-menu .menu li.action-menu-item .icon {
-    width: 4vw;
-    position: absolute;
-    top: 3vh;
-    left: 5vh;
 }
 
 .bottom-menu .menu li.action-menu-item .label {
     text-align: center;
-    font-size: 5.5vw;
-    letter-spacing: 0.5vw;
+    font-size: 21px;
+    letter-spacing: 2px;
     width: 100%;
     position: absolute;
-    top: 2.2vh;
+    top: 14px;
 }
 
 .bottom-menu .menu li.action-menu-item:active {

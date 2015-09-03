@@ -10,7 +10,7 @@
     margin: 0 auto;
     background-color: #fff;
     margin-bottom: 1.5%;
-    height: 16.8vw;
+    height: 63px;
 }
 
 .company-activites .activity:active {
@@ -27,7 +27,7 @@
 .company-activites .activity .title,
 .company-activites .activity .amount  {
     font-weight: bold;
-    font-size: 4.55vw;
+    font-size: 17px;
 }
 
 .company-activites .activity .amount  {
@@ -41,7 +41,7 @@
 }
 
 .company-activites .activity .sub-title {
-    font-size: 3.75vw;
+    font-size: 14px;
 }
 
 .company-activites .activity .partially-paid {
@@ -67,7 +67,7 @@
 .company-activites .activity .partially-paid .text {
     position: relative;
     top: -5px;
-    font-size: 4.55vw;
+    font-size: 17px;
     padding-top: 1%;
 }
 
@@ -77,12 +77,12 @@
 }
 
 .company-activites .activity .comment {
-    font-size: 3.2vw;
+    font-size: 12px;
     text-align: right;
     color: #979797;
     width: 58%;
 }
 
 .company-activites .height-content {
-    height: 20vw;
+    height: 75px;
 }

@@ -52,7 +52,7 @@
 .default-message .row {
     width: 100%;
     padding: 5px 5px 0px 10px;
-    font-size: 5vw;
+    font-size: 19px;
     min-height: 40px;
     border-bottom: 2px solid #eee;
 }
@@ -73,13 +73,13 @@
     margin-bottom: 10px;
     font-weight: normal;
     color: #C4C4C4;
-    font-size: 4vw;
+    font-size: 16px;
 }
 
 .default-message .options .title .template-name {
     color: #000;
-    font-size: 5.5vw;
-    width: 94vw;
+    font-size: 21px;
+    width: 352px;
 }
 
 .default-message .options .option {
@@ -94,12 +94,12 @@
     text-transform: uppercase;
     color: #7591AE;
     margin-top: 10px;
-    font-size: 4.5vw;
+    font-size: 17px;
 }
 
 .default-message .subject-text {
     border: none;
-    font-size: 4.5vw;
+    font-size: 17px;
     white-space: nowrap;
     width: 90%;
     overflow: hidden;
@@ -111,17 +111,17 @@
 .default-message .send-text {
     border: 1px solid #fff;
     width: 96%;
-    height: 260px;
+    height: 275px;
     margin: 0 2px;
-    font-size: 4.5vw;
+    font-size: 17px;
 }
 
 .default-message .send-text li:first-child {
-    margin-top: 5vw;
+    margin-top: 19px;
 }
 
 .default-message .send-text li {
-    margin-bottom: 5vw;
+    margin-bottom: 19px;
 }
 
 .default-message .send-text li:nth-child(2) {
@@ -135,14 +135,15 @@
 .default-message .row-space {
     width: 100%;
     padding: 5px 5px 0px 10px;
-    font-size: 5vw;
+    font-size: 19px;
     height: 10px;
     border-bottom: 2px solid #eee;
+    background-color: #eee;
 }
 
 .default-message .alternative-opcion {
     color: #ccc;
-    font-size: 5vw;
+    font-size: 19px;
     font-weight: bold;
 }
 
@@ -235,20 +236,20 @@
 }
 
 .default-message .options .selector {
-    width: 94vw;
+    width: 352px;
     height: 0;
     visibility: hidden;
-    font-size: 5vw;
+    font-size: 19px;
     -webkit-transition: height .5s linear, margin .5s linear;
     transition: height .5s linear, margin .5s linear;
 }
 .default-message .options .selector.active {
     height: auto;
-    margin: 2vw auto 2vw;
+    margin: 7px auto 7px;
     visibility: visible;
 }
 
 .default-message .options .title .template-name.active {
     border-bottom: solid 1px #ededed;
-    padding-bottom: 2vw;
+    padding-bottom: 7px;
 }
