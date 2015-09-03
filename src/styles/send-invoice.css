@@ -57,7 +57,7 @@
 .send-invoice .row .input {
     border: none;
     height: 38px;
-    font-size: 5vw;
+    font-size: 18px;
     background: #fff;
 }
 
@@ -67,7 +67,7 @@
 .send-invoice .subject-text {
     border: none;
     height: 36px;
-    font-size: 4.5vw;
+    font-size: 17px;
     background: #fff;
     width: 260px;
     text-overflow: ellipsis;
@@ -82,8 +82,8 @@
 
 .send-invoice .to-placeholder p {
     color: #969696;
-    margin: 1.75vw 3.75vw;
-    font-size: 4.55vw;
+    margin: 7px 14px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -100,8 +100,8 @@
 
 .send-invoice .subject-placeholder p {
     color: #969696;
-    margin: 1.75vw 3.75vw;
-    font-size: 4.55vw;
+    margin: 7px 14px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -113,14 +113,14 @@
 }
 
 .send-invoice .content-icon {
-    margin: 1.867vw 1.07vw;
+    margin: 7px 4px;
 }
 
 .send-invoice .to-icon i {
     color: #fff;
     background: #3965CE;
     padding: 7px 5px;
-    font-size: 4.5vw;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -135,14 +135,14 @@
     border: 1px solid #fff;
     width: 369px;
     height: 400px;
-    font-size: 4.5vw;
+    font-size: 17px;
     background-color: #ffffff;
 }
 .send-invoice .row .send-text li {
-    margin-left: 3.75vw;
+    margin-left: 14px;
 }
 
 .send-invoice .row .send-text li:first-child {
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-top: 19px;
+    margin-bottom: 19px;
 }

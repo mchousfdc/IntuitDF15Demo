@@ -20,7 +20,7 @@
     margin: 0 auto;
     background-color: #fff;
     margin-bottom: 1.5%;
-    height: 16.8vw;
+    height: 63px;
 }
 
 .invoices .invoice-list .invoice:active {
@@ -40,20 +40,20 @@
 
 .invoices .invoice .main-information {
     font-weight: bold;
-    font-size: 4.55vw;
+    font-size: 17px;
     color: #000;
 }
 
 .invoices .invoice .main-information span {
     width: 50%;
     display: inline-block;
-    font-size: 4.55vw;
+    font-size: 17px;
 }
 
 .invoices .invoice .date-information span {
     width: 50%;
     display: inline-block;
-    font-size: 3.75vw;
+    font-size: 14px;
 }
 
 .invoices .invoice .amount,
