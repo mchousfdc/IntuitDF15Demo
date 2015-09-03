@@ -15,7 +15,7 @@ var React = require('react/addons'),
     DefaultMessage = require('./components/default-message.jsx' ),
     BottomMenu = require('bottom-menu.jsx');
 // DO NOT REMOVE new route require
-        
+
 require('main.css');
 require('screen-transitions.css');
 
@@ -44,7 +44,23 @@ module.exports = React.createClass({
         window.goingBack = false;
     },
     render: function () {
-        var transitionName = 'fade';
+        var transitionName = 'fade',
+            path = this.state.path;
+
+        if (( path.indexOf('invoices') > -1 && window.goingBack ) ||
+            (path.indexOf('invoice-detail') > -1 && window.goingBack ) ||
+            (path.indexOf('send-invoice') > -1 && window.goingBack ) ||
+            (path.indexOf('settings') > -1 && window.goingBack ) ||
+            (path.indexOf('sales-forms') > -1 && window.goingBack ) ||
+            (path.indexOf('default-message') > -1 && window.goingBack ) ||
+            (path.indexOf('invoice-detail') == 1) ||
+            (path.indexOf('sales-forms') == 1 ) ||
+            (path.indexOf('default-message') == 1 )
+        ) {
+            transitionName = window.goingBack ?
+                'slideright' :
+                'slideleft';
+        }
 
         return (
             <div>
@@ -54,7 +70,7 @@ module.exports = React.createClass({
                     <div className="view-container" key={ this.state.path }>
                         { this.renderCurrentRoute() }
                     </div>
-                </ReactCSSTransitionGroup>                
+                </ReactCSSTransitionGroup>
                 { this.renderBottomMenu() }
             </div>
         );
@@ -66,7 +82,7 @@ module.exports = React.createClass({
                 'sales-forms': '/settings',
                 'default-message': '/sales-forms'
             };
-        return <Header path={ this.state.path } 
+        return <Header path={ this.state.path }
                     backMap={ backMap }/>;
     },
     renderBottomMenu: function () {
@@ -88,18 +104,18 @@ module.exports = React.createClass({
                     activities={ this.state.activities } />
     },
     invoices: function () {
-        return <Invoices key={ this.state.path } 
+        return <Invoices key={ this.state.path }
                     invoices={ this.state.invoiceList } />
     },
     invoiceDetail: function ( invoiceId ) {
         return <InvoiceDetail key={ this.state.path }
-                    invoices={ this.state.invoiceList } 
+                    invoices={ this.state.invoiceList }
                     invoiceId={ invoiceId } />
     },
     sendInvoice: function (invoiceId) {
-        return <SendInvoice key={ this.state.path }                    
+        return <SendInvoice key={ this.state.path }
                     invoiceId={ invoiceId }
-                    template={ 
+                    template={
                         Lodash.where(templates, {type: 'Invoice'})
                     } />
     },
@@ -113,7 +129,7 @@ module.exports = React.createClass({
         var template = Lodash.where(
                 templates, { type: templateType }
             )
-        return <DefaultMessage key={ this.state.path } 
+        return <DefaultMessage key={ this.state.path }
                     currentTemplate={ template } />
     },
     // DO NOT REMOVE new route callback
