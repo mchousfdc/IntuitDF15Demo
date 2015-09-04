@@ -39,11 +39,8 @@ module.exports = React.createClass({
         }
     },
     goTo: function (id) {
-        
-        // setTimeout( function () {
-            navigate(id);
-            this.toggleMenu();
-        // }, 100);
+        this.toggleMenu();
+        navigate(id);
     },
     getHeaderSectionsFromPath: function () {
         var page = this.props.path.split('/')[1],
