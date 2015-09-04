@@ -205,6 +205,7 @@
     -o-border-radius: 25px;
     border-radius: 25px;
     -webkit-transition: background 0.4s;
+    -webkit-backface-visibility: hidden;
     -moz-transition: background 0.4s;
     -o-transition: background 0.4s;
     transition: background 0.4s;
@@ -222,6 +223,7 @@
     -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     -webkit-transition: margin 0.4s;
+    -webkit-backface-visibility: hidden;
     -moz-transition: margin 0.4s;
     -o-transition: margin 0.4s;
     transition: margin 0.4s;
@@ -241,6 +243,7 @@
     visibility: hidden;
     font-size: 19px;
     -webkit-transition: height .5s linear, margin .5s linear;
+    -webkit-backface-visibility: hidden;
     transition: height .5s linear, margin .5s linear;
 }
 .default-message .options .selector.active {

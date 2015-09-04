@@ -1,5 +1,5 @@
 .header {
-    width: 100%;
+    width: 375px;
     position: fixed;
     font-size: 17px;
     font-weight: bold;
@@ -10,6 +10,7 @@
     padding-top: 23px;
     transition: transform 0.5s ease-in;
     -webkit-transition: transform 0.5s ease-in;
+    -webkit-backface-visibility: hidden;
     -webkit-box-shadow: 1px 1px 1px 0px #b2b2b2;
     box-shadow: 1px 1px 1px 0px #b2b2b2;
 }

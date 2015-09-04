@@ -56,19 +56,22 @@
 }
 
 .company-activites .activity .partially-paid .icon {
-    background: url('../images/InfoIcon@2x.png') no-repeat;
     background-size: cover;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     display: inline-block;
     margin: 0 2%;
+    background: #fff;
+    color: #56B349;
+    border-radius: 50px 0px 50px 50px;
+    transform: rotate(45deg);
+    font-size: 14px;
 }
 
 .company-activites .activity .partially-paid .text {
-    position: relative;
-    top: -5px;
     font-size: 17px;
     padding-top: 1%;
+    margin-left: 5px;
 }
 
 .company-activites .activity .partially-paid.active {

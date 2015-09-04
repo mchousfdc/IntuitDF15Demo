@@ -169,6 +169,7 @@
     -o-border-radius: 25px;
     border-radius: 25px;
     -webkit-transition: background 0.4s;
+    -webkit-backface-visibility: hidden;
     -moz-transition: background 0.4s;
     -o-transition: background 0.4s;
     transition: background 0.4s;
@@ -183,6 +184,7 @@
     -o-border-radius: 100%;
     border-radius: 100%;
     -webkit-transition: margin 0.4s;
+    -webkit-backface-visibility: hidden;
     -moz-transition: margin 0.4s;
     -o-transition: margin 0.4s;
     transition: margin 0.4s;

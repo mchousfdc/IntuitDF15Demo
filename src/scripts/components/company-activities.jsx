@@ -3,6 +3,7 @@ var React = require('react/addons'),
     ActionButton = require('action-button.jsx');
 
 require('../../styles/company-activities.css');
+require('gizmo/ss-gizmo.css');
 require('../mixins/utilsMixin.js');
 
 module.exports = React.createClass({
@@ -39,7 +40,7 @@ module.exports = React.createClass({
                     
                     <div>
                         <span className={ partiallyPaidClassName }>
-                            <span className="icon"></span>
+                            <span className="icon"><i className="ss-gizmo ss-clock"></i></span>
                             <span className="text">Partially paid</span>
                         </span> 
                         <span className="comment">{ activity.comment }</span>
