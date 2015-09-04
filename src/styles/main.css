@@ -38,6 +38,7 @@ li {
 .view-container {
     transition: transform 0.5s ease-in;
     -webkit-transition: transform 0.5s ease-in;
+    -webkit-backface-visibility: hidden;
 }
 
 .view-container.menu-open {
