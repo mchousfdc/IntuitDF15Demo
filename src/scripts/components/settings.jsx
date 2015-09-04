@@ -83,7 +83,7 @@ module.exports = React.createClass({
                 <div className="row blank">
                     <div className="options" onClick={this.goToLink} >
                         <div className="title fl">
-                            <p>Default email message</p>
+                            <p>Default Email Message</p>
                         </div>
                         <div className="option fr"><i className="ss-gizmo ss-navigateright"></i></div>
                         <div className="clear"></div>
