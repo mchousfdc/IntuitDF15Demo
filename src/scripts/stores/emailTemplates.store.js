@@ -10,7 +10,7 @@ var EmailTemplatesStore = Reflux.createStore({
         // This function will be called when the store will be
         // first initialized
         templates = Configuration.emailTemplates;
-        templateType = 'Estimate';
+        templateType = 'Invoice';
     },
     onToggleTemplateType: function (type) {
         templateType = type;

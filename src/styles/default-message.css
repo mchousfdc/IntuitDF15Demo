@@ -50,7 +50,7 @@
 
 /*Customize */
 .default-message .row {
-    width: 100%;
+    width: 360px;
     padding: 5px 5px 0px 10px;
     font-size: 19px;
     min-height: 40px;
@@ -133,7 +133,7 @@
 }
 
 .default-message .row-space {
-    width: 100%;
+    width: 360px;
     padding: 5px 5px 0px 10px;
     font-size: 19px;
     height: 10px;
@@ -255,4 +255,17 @@
 .default-message .options .title .template-name.active {
     border-bottom: solid 1px #ededed;
     padding-bottom: 7px;
+}
+
+.default-message textarea {
+    border: none;
+    width: 98%;
+    min-height: 225px;
+    font-size: 17px;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
 }
