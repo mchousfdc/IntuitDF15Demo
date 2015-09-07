@@ -53,14 +53,14 @@ module.exports = {
             title: "Invoice",
             store: "FreshFood Market",
             prefix: "for",
-            amount: 100,
+            amount: 98.76,
             comment: "Added 12 days ago",
             date: Moment().subtract( { days:12 } )
                     .format('M/D/YY'),
             due: 18,
             item: {
                 product: 'Apple',
-                detail: '1.00 x 100.00'
+                detail: '1.00 x 98.76'
             }
         }
     ],
