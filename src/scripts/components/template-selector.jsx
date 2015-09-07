@@ -14,7 +14,7 @@ module.exports = React.createClass({
     selectTemplate: function () {
         this.props.selectionCallback($('.main-selector .active').text());
     },
-    /* Slider simmulation movements */        
+    /* Slider simmulation movements */
     nextItem: function (parent, activeClass) {
         var $current = $('.' + parent + ' .' + activeClass),
             $next = $current.next();
@@ -39,7 +39,7 @@ module.exports = React.createClass({
         var $parent = $('.' + parent + ' .' + childClass),
             index = 0,
             delta = delta || 1;
-        
+
         //Simulates delta movements
         (function moveNextElement(index) {
             if (index < delta) {
@@ -63,7 +63,7 @@ module.exports = React.createClass({
         var $parent = $('.' + parent + ' .' + childClass),
             index = 0,
             delta = delta || 1;;
-        
+
         //Simulates delta movements
         (function movePrevElement(index) {
             if (index < delta) {
@@ -100,7 +100,7 @@ module.exports = React.createClass({
                 return;
             } else {
                 delta = Math.floor(offset / selectorHeight);
-            
+
                 if (delta > 0) {
                     this.movePrev('select-templates', 'template-selector', 'main-selector .active', 'Invoice', delta, this);
                 } else {
@@ -110,36 +110,36 @@ module.exports = React.createClass({
         }.bind(this));
     },
     render: function() {
-        return (            
+        return (
             <div className='select-templates'>
                 <div className='template-selector'>
                     <div className='third-line-prev'>
                         <span>Invoice</span>
                         <span>Estimate</span>
-                        <span>Sales Receipt</span>
-                        <span className='active'>&nbsp;</span>
+                        <span className='active'>Sales Receipt</span>
+                        <span>&nbsp;</span>
                         <span>&nbsp;</span>
                     </div>
                     <div className='second-line-prev'>
                         <span>Invoice</span>
-                        <span>Estimate</span>
-                        <span className='active'>Sales Receipt</span>
-                        <span>&nbsp;</span>
-                    </div>    
-                    <div className='main-selector'>
-                        <span>Invoice</span>
                         <span className='active'>Estimate</span>
                         <span>Sales Receipt</span>
-                    </div>
-                    <div className='second-line-next'>
                         <span>&nbsp;</span>
+                    </div>
+                    <div className='main-selector'>
                         <span className='active'>Invoice</span>
                         <span>Estimate</span>
                         <span>Sales Receipt</span>
                     </div>
-                    <div className='third-line-next'>
-                        <span>&nbsp;</span>
+                    <div className='second-line-next'>
                         <span className='active'>&nbsp;</span>
+                        <span>Invoice</span>
+                        <span>Estimate</span>
+                        <span>Sales Receipt</span>
+                    </div>
+                    <div className='third-line-next'>
+                        <span className='active'>&nbsp;</span>
+                        <span>&nbsp;</span>
                         <span>Invoice</span>
                         <span>Estimate</span>
                         <span>Sales Receipt</span>
