@@ -11,11 +11,15 @@ require('gizmo/ss-gizmo.css');
 module.exports = React.createClass({
     getInitialState: function () {
         return({
-            selectorOpen: false
+            selectorOpen: false,
+            updateTemplate: false
         });
     },
     updateTemplateType: function (templateType) {
         EmailTemplateActions.toggleTemplateType(templateType);
+        this.setState({
+            updateTemplate: false
+        })
     },
     componentWillReceiveProps: function (nextProps) {
         $('.subject-text, .send-text').css({opacity: 0})
@@ -23,18 +27,27 @@ module.exports = React.createClass({
     },
     openSelector: function () {
         this.setState({
-            selectorOpen: !this.state.selectorOpen
+            selectorOpen: !this.state.selectorOpen,
+            updateTemplate: false
         })
+    },
+    activeTextArea: function () {
+        this.setState({ updateTemplate: !this.state.updateTemplate });
     },
     render: function() {
         var template = this.props.currentTemplate[0];
-            templateBody = template.body.map( function(row, index) {
-                return (
-                    <li key={ index }>
-                        <span>{ row }</span>
-                    </li>
-                    );
-            }),
+            templateBody = this.state.updateTemplate ?
+                <li>
+                    <textarea></textarea>
+                </li> :
+                template.body.map( function(row, index) {
+                    return (
+                        <li key={ index } onClick={ this.activeTextArea } >
+                            <span>{ row }</span>
+                        </li>
+                        );
+                }.bind(this)),
+
             selectorClassName = this.state.selectorOpen ?
                 'selector active' :
                 'selector',
