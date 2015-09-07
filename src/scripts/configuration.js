@@ -6,15 +6,15 @@ module.exports = {
         {
             id: 1003,
             title: "Invoice",
-            store: "Sanfran Grocery",
+            store: "Green Leaf Organics",
             prefix: "for",
-            amount: 200,
+            amount: 234.87,
             comment: "Added today",
             date: Moment().format('M/D/YY'),
             due: 30,
             item: {
                 product: 'Apple',
-                detail: '2.00 x 100.00'
+                detail: '2.00 x 117.435'
             }
         },
         {
