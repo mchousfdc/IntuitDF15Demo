@@ -64,6 +64,7 @@
     background: #fff;
     color: #56B349;
     border-radius: 50px 0px 50px 50px;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     font-size: 14px;
 }
