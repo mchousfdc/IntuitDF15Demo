@@ -44,8 +44,14 @@
     color: #000;
 }
 
-.invoices .invoice .main-information span {
-    width: 50%;
+.invoices .invoice .main-information .store{
+    width: 243px;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.invoices .invoice .main-information .amount {
+    width: 100px;
     display: inline-block;
     font-size: 17px;
 }
