@@ -111,21 +111,35 @@
 .default-message .send-text {
     border: 1px solid #fff;
     width: 96%;
-    height: 275px;
+    min-height: 275px;
     margin: 0 2px;
     font-size: 17px;
 }
 
-.default-message .send-text li:first-child {
+.default-message .send-text p:first-child {
     margin-top: 19px;
 }
 
-.default-message .send-text li {
+.default-message .send-text p {
     margin-bottom: 19px;
 }
 
-.default-message .send-text li:nth-child(2) {
+.default-message .send-text p.template-body:nth-child(2) {
     margin-bottom: 0px;
+}
+
+.default-message .send-text .signature span {
+    display: block;
+}
+
+.default-message .send-text .signature span:nth-child(2) {
+    color: #1155cc;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.default-message .send-text .signature span:nth-child(4) {
+    font-weight: bold;
 }
 
 .default-message .input-format {
@@ -141,7 +155,7 @@
     background-color: #eee;
 }
 
-.default-message .alternative-opcion {
+.default-message .alternative-option {
     color: #ccc;
     font-size: 19px;
     font-weight: bold;
@@ -269,4 +283,23 @@
     box-shadow: none;
     resize: none;
     font-family: 'HelveticaNeue', sans;
+}
+
+.default-message .paste-textarea {
+    width: 355px;
+    height: 250px;
+    font-family: 17px;
+    position: relative;
+    font-family: 'HelveticaNeue', sans;
+}
+
+.default-message .paste-text {
+    position: absolute;
+    top: -32px;
+    left: -2px;
+    width: 66px;
+}
+
+.default-message .paste-text:active {
+    opacity: 0.3;
 }
