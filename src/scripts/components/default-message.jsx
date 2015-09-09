@@ -12,7 +12,9 @@ module.exports = React.createClass({
     getInitialState: function () {
         return({
             selectorOpen: false,
-            updateTemplate: false
+            updateTemplate: false,
+            activePaste: false,
+            pasteText: false
         });
     },
     updateTemplateType: function (templateType) {
@@ -28,23 +30,80 @@ module.exports = React.createClass({
     openSelector: function () {
         this.setState({
             selectorOpen: !this.state.selectorOpen,
-            updateTemplate: false
+            updateTemplate: false,
+            pasteText: false,
+            activePaste: false
         })
     },
-    activeTextArea: function () {
-        this.setState({ updateTemplate: !this.state.updateTemplate });
+    activeTextArea: function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        this.setState({ 
+            updateTemplate: !this.state.updateTemplate,
+            selectorOpen: false
+        });
+    },
+    activePaste: function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        this.setState({
+            activePaste: true
+        })
+    },
+    pasteText: function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        this.setState({
+            activePaste: false,
+            pasteText: true
+        });
     },
     render: function() {
-        var template = this.props.currentTemplate[0];
+        var template = this.props.currentTemplate[0],
+            customTemplateProp = this.props.customTemplate,
+            customBody = customTemplateProp.body.map(
+                function (row, index) {
+                    return (
+                        <p key={ index }>
+                            { row }
+                        </p>
+                    );
+                }
+            ),
+            customSignature = customTemplateProp.signature.map(
+                function (row, index) {
+                    return (
+                        <span key={ index }>
+                            { row }
+                        </span>
+                    );
+                }
+            ),
+            templateIconPaste = this.state.activePaste ? 
+                <img src={ require('paste.png') } 
+                    alt="paste" 
+                    className="paste-text" 
+                    onClick={ this.pasteText }/> : 
+                null,
             templateBody = this.state.updateTemplate ?
-                <li>
-                    <textarea></textarea>
-                </li> :
+                (this.state.pasteText ?
+                    <div>
+                        { customBody }
+                        <p className='signature'>
+                            { customSignature }
+                        </p>
+                    </div> :
+                    <div className="paste-textarea" 
+                        onClick={ this.activePaste }>
+                        { templateIconPaste }
+                    </div> ) :
                 template.body.map( function(row, index) {
                     return (
-                        <li key={ index } onClick={ this.activeTextArea } >
-                            <span>{ row }</span>
-                        </li>
+                        <p key={ index }
+                            className="template-body"
+                            onClick={ this.activeTextArea } >
+                            { row }
+                        </p>
                         );
                 }.bind(this)),
 
@@ -95,9 +154,9 @@ module.exports = React.createClass({
                     </div>
                 </div>
                 <div className="row blank send-textarea">
-                    <ul className='send-text'>
+                    <div className='send-text' >
                         { templateBody }
-                    </ul>
+                    </div>
                 </div>
                 <div className="row-space">
 
@@ -105,7 +164,7 @@ module.exports = React.createClass({
                 <div className="row blank">
                     <div className="options">
                         <div className="title fl">
-                            <span className="alternative-opcion">Attach invoice as PDF</span>
+                            <span className="alternative-option">Attach invoice as PDF</span>
                         </div>
                         <div className="option fr">
                             <div className="switch">

@@ -64,6 +64,24 @@ module.exports = {
             }
         }
     ],
+    // Email template from clipboard
+    customTemplate: {
+        body: [
+            "Hi,",
+            "I want to personally thank you for your business and your " +
+            "decision to invest in local, organic-focused businesses like " +
+            "HealthySnacks!",
+            "Attached to this email is your invoice.  Let me know if you " +
+            "have any questions!",
+            "Thanks,"
+        ],
+        signature: [
+            "Samantha Smith",
+            "415.444.7575",
+            "HealthySnacks",
+            "\"Simple ingredients for a healthy lifestyle\""
+        ]
+    },
     // Email templates
     emailTemplates: [
         {
