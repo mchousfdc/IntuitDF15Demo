@@ -27,7 +27,7 @@ module.exports = React.createClass({
         ),
         Reflux.connect(
             EmailTemplatesStore,
-            'templates templateType'
+            'templates templateType customTemplate'
         )
     ],
     routes: {
@@ -130,7 +130,8 @@ module.exports = React.createClass({
                 templates, { type: templateType }
             )
         return <DefaultMessage key={ this.state.path }
-                    currentTemplate={ template } />
+                    currentTemplate={ template } 
+                    customTemplate={ customTemplate } />
     },
     // DO NOT REMOVE new route callback
     notFound: function (path) {
